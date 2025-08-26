@@ -282,6 +282,30 @@ enter the character to replace spaces:l
  modifying string:vamsilkrishna
 
 
+.Q)Write a program in C to count the number of punctuation characters present in a string?
+A:#include<stdio.h>
+#include<ctype.h>
+#include<string.h>
+int main()
+{
+    int count=0;
+    char str[100];
+    printf("enter the string:");
+    fgets(str,sizeof(str),stdin);
+    for(int i=0;str[i]!='\0';i++)
+    {
+        if (ispunct(str[i]))
+        {
+            count++;
+        }
+    }
+    printf("punctuation charactres is %d",count);
+}
+OUTPUT:
+enter the string:vamsi!@#$%^&*()
+punctuation charactres is 10
+
+
 
 
 
