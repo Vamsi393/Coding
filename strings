@@ -232,6 +232,27 @@ int main()
 OUTPUT:enter the string:VAMSI
 vamsi
 
+Write a program in C to check whether a character is a Hexadecimal Digit or not?
+#include<stdio.h>
+#include<ctype.h>
+int main()
+{
+    char ch;
+    printf("enter the character");
+    scanf("%c",&ch);
+        if(ch>='a' && ch<='f' || ch>='A' && ch<='Z'){
+            printf("hexa digits are found");
+        }
+        else
+        {
+        printf("not found");
+        }
+}
+OUTPUT:
+enter the character:a
+hexa digits are found
+
+
 
 
 
