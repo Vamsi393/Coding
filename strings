@@ -259,7 +259,7 @@ hexa digits are found
 #include<string.h>
 int main()
 {
-    char str[10];
+    char str[100];
     char ch;
     printf("enter the string:");
     fgets(str,sizeof(str),stdin);
@@ -276,6 +276,11 @@ int main()
   printf(" modifying string:%s",str);
   return 0;
 }
+OUTPUT:
+enter the string:vamsi krishna
+enter the character to replace spaces:l
+ modifying string:vamsilkrishna
+
 
 
 
