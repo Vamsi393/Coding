@@ -133,10 +133,11 @@ alphabets in the string is vamsi
 int main()
 {
     char str[10]="banana";
-    int i,j,count=1;
+    int i,j,count;
     int len=strlen(str);
     for(i=0;i<len;i++)
     {
+       count=1;
         if (str[i]=='0')
         continue;
     for(j=i+1;j<len;j++)
@@ -154,7 +155,7 @@ int main()
 output:
 b:1
 a:3
-n:4
+n:2
 
 
 
