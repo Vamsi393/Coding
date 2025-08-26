@@ -255,6 +255,31 @@ hexa digits are found
 
 
 
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char str[10];
+    char ch;
+    printf("enter the string:");
+    fgets(str,sizeof(str),stdin);
+    printf("enter the character to replace spaces:");
+    scanf("%c",&ch);
+    for(int i=0;str[i]!='\0';i++)
+  {
+      if(str[i]==' ')
+      {
+      str[i]=ch; //replace space
+      }
+    
+  }
+  printf(" modifying string:%s",str);
+  return 0;
+}
+
+
+
+
 
 
     
