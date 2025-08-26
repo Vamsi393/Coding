@@ -308,6 +308,29 @@ punctuation charactres is 10
 
 
 
+Q). Write a program in C to print only the string before the new line character?
+include<stdio.h>
+#include<ctype.h>
+int main()
+{
+    char ch;
+    printf("enter the letter");
+    scanf("%c",&ch);
+    if(islower(ch))
+    {
+        printf("letter is lowercase");
+    }
+    else
+    printf("letter is upper case");
+}
+OUTPUT:enter the letterVAMSI
+letter is upper case
+enter the lettervamsi
+letter is lowercase
+
+
+
+
 
 
 
