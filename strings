@@ -171,6 +171,31 @@ int main()
     
 }
 OUTPUT:rajana	vamsikrishna
+another method:
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char str1[10];
+    char str2[10];
+    char combined[20];
+    int i,j;
+    printf("enter the string");
+    scanf("%s",str1);
+    printf("enter the string2");
+    scanf("%s",str2);
+    for (i=0;str1[i]!='\0';i++){
+        combined[i]=str1[i];
+    }
+    for (j=0;str2[j]!='\0';j++)
+    {
+        combined[i+j]=str2[j];
+    }
+    printf("%s",combined);
+}
+OUTPUT:enter the stringvamsi
+enter the string2krishn
+vamsikrishn
 
 
 
