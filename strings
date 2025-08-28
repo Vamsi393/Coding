@@ -694,4 +694,32 @@ enter the new character to replace:p
 after replacing the modifying string is bapapa=6
 
 
+Q)4. Write a C program to remove all occurrences of a character from a string.
+A)#include<stdio.h>
+#include<string.h>
+int main()
+{
+    int i,j=0;
+    char str[100];
+    printf("enter the string:");
+    scanf("%s",str);
+    char ch;
+    printf("enter the remove character:");
+    scanf(" %c",&ch);
+    for(i=0;str[i]!='\0';i++)
+    {
+        if(str[i]!=ch)
+        {
+            str[j]=str[i];
+            j++;
+        }
+    }
+    str[j]='\0';
+    printf("modifying string is:%s",str);
+}
+OUTPUT:
+enter the string:banana
+enter the remove character:a
+modifying string is:bnn
+
 
