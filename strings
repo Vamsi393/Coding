@@ -722,4 +722,36 @@ enter the string:banana
 enter the remove character:a
 modifying string is:bnn
 
+Q)62. Write a C program to remove the first occurrence of a character from a string?
+A)nclude<stdio.h>
+#include<string.h>
+int main()
+{
+    int i,j=0;
+    char str[100];
+    printf("enter the string:");
+    scanf("%s",str);
+    char ch;
+    printf("enter the remove character:");
+    scanf(" %c",&ch);
+    int removed=0;
+    for(i=0;str[i]!='\0';i++)
+    {
+        if( str[i]==ch && removed==0)
+        {
+            
+            removed=1;//only first occurance is removed
+            continue;
+        }
+            str[j]=str[i];
+            j++;
+    }
+    str[j]='\0';
+    printf("modifying string is:%s",str);
+}
+OUTPUT:enter the string:banana
+enter the remove character:a
+modifying string is:bnana
+
+
 
