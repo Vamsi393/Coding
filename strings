@@ -596,3 +596,69 @@ int main()
 }
 OUTPUT:enter the stringbanana
 lowest frequency of character is b=1
+
+Q)Write a C program to remove the first occurrence of a character from a string?
+A)#include <stdio.h>
+#include<string.h>
+#include<ctype.h>
+int main()
+{
+    int i;
+    char str[100];
+    printf("enter the string:");
+    scanf("%s",str);
+    char ch;
+    printf("enter the character:");
+    scanf(" %c",&ch);
+    char new;
+    printf("enter the new character to replace:");
+    scanf(" %c",&new);
+    for(i=0;str[i]!='\0';i++)
+    {
+        if(str[i]==ch)
+        {
+            str[i]=new;
+            break;
+        }
+        
+    }
+    printf("after replacing the modifying string is %s=%d\n",str,i);
+}
+OUTPUT:enter the string:banana
+enter the character:a
+enter the new character to replace:x
+after replacing the modifying string is bxnana=1
+
+Q) Write a C program to remove the last occurrence of a character from a string?
+A)#include <stdio.h>
+#include<string.h>
+#include<ctype.h>
+int main()
+{
+    int i;
+    char str[100];
+    printf("enter the string:");
+    scanf("%s",str);
+    char ch;
+    printf("enter the character:");
+    scanf(" %c",&ch);
+    char new;
+    printf("enter the new character to replace:");
+    scanf(" %c",&new);
+    for(i=5;str[i]!='\0';i--)
+    {
+        if(str[i]==ch)
+        {
+            str[i]=new;
+            break;
+        }
+        
+    }
+    printf("after replacing the modifying string is %s=%d\n",str,i);
+}
+OUTPUT:enter the string:banana
+enter the character:a
+enter the new character to replace:u
+after replacing the modifying string is bananu=5
+
+
