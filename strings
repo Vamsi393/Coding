@@ -525,10 +525,11 @@ int main()
     char str[100];
     printf("enter the string");
     scanf("%s",str);
-    for(i=0;str[i]!='\0';i++)
+    int len=strlen(str);
+    for(i=0;i<len;i++)
     {
        int count=0;
-        for(j=i+1;str[j]!='\0';j++)
+        for(j=i+1;j<len;j++)
         {
             if (str[i]==str[j])
             {
@@ -545,6 +546,6 @@ int main()
     
     
 }
-OUTPUT:enter the stringbananaa
+OUTPUT:enter the stringbanana
 highest frequency of the character in the string is :
 a
