@@ -597,7 +597,7 @@ int main()
 OUTPUT:enter the stringbanana
 lowest frequency of character is b=1
 
-Q)Write a C program to remove the first occurrence of a character from a string?
+Q)Write a C program to replace the first occurrence of a character with another in a string.
 A)#include <stdio.h>
 #include<string.h>
 #include<ctype.h>
@@ -629,7 +629,7 @@ enter the character:a
 enter the new character to replace:x
 after replacing the modifying string is bxnana=1
 
-Q) Write a C program to remove the last occurrence of a character from a string?
+Q) Write a C program to replace the last occurrence of a character with another in a string.
 A)#include <stdio.h>
 #include<string.h>
 #include<ctype.h>
@@ -661,7 +661,7 @@ enter the character:a
 enter the new character to replace:u
 after replacing the modifying string is bananu=5
 
-Q)Write a C program to remove all occurrences of a character from a string?
+Q)Write a C program to replace all occurrences of a character with another in a string?
 A)#include <stdio.h>
 #include<string.h>
 #include<ctype.h>
