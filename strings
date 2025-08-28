@@ -513,3 +513,38 @@ enter the character to be search:a
  a characters at found at index=1
  a characters at found at index=3
  a characters at found at index=5
+
+Q)Write a C program to find the highest frequency character in a string?
+A)#include<stdio.h>
+#include<string.h>
+#include<ctype.h>
+int main()
+{
+    int i,j,max=0;
+    char charmax;
+    char str[100];
+    printf("enter the string");
+    scanf("%s",str);
+    for(i=0;str[i]!='\0';i++)
+    {
+       int count=0;
+        for(j=i+1;str[j]!='\0';j++)
+        {
+            if (str[i]==str[j])
+            {
+                count++;
+            }
+        }
+        if(count>max)
+        {
+          max=count;
+          charmax=str[i];//highest frequency of character is assigned to charmax
+        }
+    }
+        printf("highest frequency of the character in the string is :\n%c",charmax,max);
+    
+    
+}
+OUTPUT:enter the stringbananaa
+highest frequency of the character in the string is :
+a
