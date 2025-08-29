@@ -753,5 +753,35 @@ OUTPUT:enter the string:banana
 enter the remove character:a
 modifying string is:bnana
 
+Q)Write a C program to find the first occurrence of a word in a given string?
+A)#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char str[100],word[50];
+    int i,len_str,len_word,found;
+    printf("enter the string:");
+    fgets(str,sizeof(str),stdin);
+    str[strcspn(str,"\n")]='\0';
+    printf("enter the word to be search:");
+    scanf("%s",&word);
+    len_str=strlen(str);
+    len_word=strlen(word);
+    for(i=0;i<=len_str-len_word;i++)
+    {
+        if(strncmp(&str[i],word,len_word)==0){
+        printf("the word '%s'first occurs at index is %d\n",word,i);
+        return 0;
+        }
+        
+    }
+    printf("the word '%s' was not found");
+    
+}
+OUTPUT:enter the string:hello world
+enter the word to be search:world
+the word 'world'first occurs at index is 6
+
+
 
 
