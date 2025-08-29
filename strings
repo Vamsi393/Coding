@@ -817,6 +817,43 @@ enter the word to be search:one
 word occurance 'one' found at index is 12
 
 
+Q)Write a C program to search all occurrences of a word in a given string?
+A)#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char str[100],word[50];
+    int i,len_str,len_word,last_index=-1,found;
+    printf("enter the string:");
+    fgets(str,sizeof(str),stdin);
+    str[strcspn(str,"\n")]='\0';
+    printf("enter the word to be search:");
+    scanf("%s",&word);
+    len_str=strlen(str);
+    len_word=strlen(word);
+    for(i=0;i<=len_str-len_word;i++)
+    {
+        if(strncmp(&str[i],word,len_word)==0)
+        {
+        printf("word occurance '%s' found at index is %d\n",word,i);
+        found=1;
+        }
+       
+     }
+     if(!found)
+     {
+     printf("the word '%s' was not found");
+     }
+    
+}
+OUTPUT:enter the string:hello everyone hello namsthe
+enter the word to be search:hello
+word occurance 'hello' found at index is 0
+word occurance 'hello' found at index is 15
+
+
+
+
 
 
 
