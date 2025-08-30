@@ -73,4 +73,46 @@ enter a choice1
 enter a integer87
 you entered number is 87
 
+Q)Define a structure to represent a point in 2D space with x and y coordinates (both integers). Write a
+function to check if two points are equal (have the same x and y coordinates)?
+A)#include<stdio.h>
+struct point 
+{
+    int x;
+    int y;
+};
+int isequal( struct point p1, struct point p2)
+{
+    if (p1.x==p2.x && p1.y==p2.y)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+    
+}
+int main()
+{
+    struct point p1,p2;
+printf("enter the first point:(x,y)");
+scanf("%d %d",&p1.x,&p1.y);
+printf("enter the second point:(x,y)");
+getchar();
+scanf("%d %d", &p2.x, &p2.y);
+if (isequal(p1,p2)) {
+    printf("two points are equal");
+}
+else
+{
+    printf("two points are not equal");
+}
+return 0;
+}
+OUTPUT:
+enter the first point:(x,y)1,2
+enter the second point:(x,y)4,6
+two points are not equal
+
 
