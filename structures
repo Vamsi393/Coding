@@ -34,4 +34,43 @@ void main()
     printf("%d %s %.2f",s1[i].rollno,s1[i].name,s1[i].marks);
     }
 }
+Q)Define a union to store either an integer or a floatingpoint number. Write a function to accept the
+type of data (integer or float) and then read the corresponding value from the user. Store the value in
+the union and print it?
+A)#include<stdio.h>
+union number{
+    int i;
+    float f;
+};
+int vamsi(int);
+int main()
+{
+    int choice;
+    printf("enter a choice");
+    scanf("%d",&choice);
+    vamsi(choice);
+}
+int vamsi(int choice)
+{
+    union number n;
+    if(choice==1)
+    {
+        printf("enter a integer");
+        scanf("%d",&n.i);
+        printf("you entered number is %d",n.i);
+    }
+    else if(choice==2)
+    {
+        printf("enter a float number");
+        scanf("%f",&n.f);
+        printf("you enetrd number is %f",n.f);
+    }
+}
+OUTPUT:enter a choice2
+enter a float number56.8
+you enetrd number is 56.799999
+enter a choice1
+enter a integer87
+you entered number is 87
+
 
