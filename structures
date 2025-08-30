@@ -213,7 +213,8 @@ int main()
     printf("conversion:%.2f",result);
     return 0;
 }
- 
+ //1 inch=2.54cm
+//1feet=30.48cm.
       
 
 
