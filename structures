@@ -115,4 +115,53 @@ enter the first point:(x,y)1,2
 enter the second point:(x,y)4,6
 two points are not equal
 
+Q)Create a structure to represent a book with the following members: title (string), author (string),
+ISBN (long int), and number of pages (int). Write a function to accept details of a book from the user and
+store them in a structure variable?
+A)#include<stdio.h>
+struct book
+{
+    char title[20];
+    char author[20];
+   long int isbn;
+    int pages;
+};
+void acceptbookdetails( struct  book *b)
+{
+      printf("enter book title:");
+      fgets(b->title,sizeof(b->title),stdin);
+      printf("enter author name:");
+      fgets(b->author,sizeof(b->author),stdin);
+      printf("enter isbn number:");
+      scanf("%ld",&b->isbn);
+      printf("enter pages:");
+      scanf("%d",&b->pages)enter book title:dailyupdates
+ }
+
+int main()
+{
+    struct book mybook;
+    acceptbookdetails(&mybook);
+     //display book details;
+     printf("\n book details:\n");
+     printf("title:%s\n",mybook.title);
+     printf("author:%s\n",mybook.author);
+     printf("isbn:%ld\n",mybook.isbn);
+     printf("pages:%d\n",mybook.pages);
+}
+OUTPUT:
+enter author name:vamsi
+enter isbn number:8688347365
+enter pages:100
+
+ book details:
+title:dailyupdates
+
+author:vamsi
+
+isbn:8688347365
+pages:10
+      
+
+
 
