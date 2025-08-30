@@ -161,6 +161,59 @@ author:vamsi
 
 isbn:8688347365
 pages:10
+
+Q)Define a union to represent the size of a product, which can be specified in centimeters, inches, or
+feet. Write a function to convert the size from one unit to another (e.g., centimeters to inches)?
+A)#include<stdio.h>
+union size 
+{
+    float centimeters;
+    float inches;
+    float feet;
+};
+float conversion(float value,char from,char to)
+ {
+     float cm;
+     if(from=='c'){
+     cm=value;
+     }
+     else if (from=='i'){
+     cm=value*2.54;//
+     }
+     if (from=='f'){
+     cm=value*30.48;
+     }
+  if(to=='c')
+  {
+      return cm;
+  }
+  else if(to=='i'){
+      return cm/2.54;
+  }
+  if(to=='f'){
+      return cm/30.48;
+  }
+     return -1;//user wrong input type cheste c,i,f kakunta
+     
+ }
+
+
+int main()
+{
+    union size product;
+    char from ,to; //from manki dheni nunchi convert avvali
+    //to dhentho compare avvali
+    printf("enter size value:");
+    scanf("%f",&product.centimeters);
+    printf("enter from unit:(c=cm,i=inches,f=feet:");
+    scanf(" %c ",&from);
+    printf("enter to unit:(c=cm,i=inches,f=feet");
+    scanf(" %c ",&to);
+    float result=conversion(product.centimeters,from,to);
+    printf("conversion:%.2f",result);
+    return 0;
+}
+ 
       
 
 
