@@ -215,6 +215,45 @@ int main()
 }
  //1 inch=2.54cm
 //1feet=30.48cm.
+
+
+
+
+Q)Define a structure to represent a date with day, month, and year (all integers). Write a function to
+check if a given year is a leap year?
+A)#include<stdio.h>
+struct date
+{
+    int day;
+    int month;
+    int year;
+};
+int leapyear( int year){
+    if((year%4==0 && year%100!=0)||(year%400==0))
+    return 1;
+    else 
+    return 0;
+}
+int main()
+{
+    struct date today;
+    printf("enter the day");
+    scanf("%d",&today.day);//variable.member name endhuku teskunnam ante numerical valyues isthunnapudu use chestam
+    printf("enter the month");
+    scanf("%d",&today.month);
+    printf("enter the year");
+    scanf("%d",&today.year);
+   if(leapyear(today.year))
+   printf(" %d %d %d is leapyear",today.day,today.month,today.year);
+   else
+   printf(" %d %d %d is not leapyear",today.day,today.month,today.year);
+   
+}
+
+ OUTPUT:enter the day3
+enter the month9
+enter the year2003
+ 3 9 2003 is not leapyear
       
 
 
