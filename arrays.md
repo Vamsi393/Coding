@@ -16,3 +16,23 @@ for(i=0;i<5;i++)
 OUTPUT:
 enter the elements in the array:1 2 3 4 5
 12345
+
+Q)Write a program in C to read n number of values in an array and display them in reverse 
+order?
+A)#include<stdio.h>
+int main()
+{
+    int arr[5];
+    int i;
+    printf("enter the elements:");
+    for(i=0;i<5;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    for(i=4;i>=0;i--)
+    {
+        printf("%d",arr[i]);
+    }
+}
+OUTPUT:enter the elements:1 2 3 4 5
+54321
