@@ -93,4 +93,25 @@ OUTPUT:max element in the array is 1
 
 
 
+ 4. Write a program in C to copy the elements of one array into another array?
+A)include<stdio.h>
+int main()
+{
+    int arr1[5],arr2[5],i;
+    printf("enter the elements in arr1 is :");
+    for(i=0;i<5;i++)
+    {
+        scanf("%d",&arr1[i]);
+    }
+    for(i=0;i<5;i++)
+    {
+        arr2[i]=arr1[i];
+    }
+    for(i=0;i<5;i++)
+    {
+    printf("%d",arr2[i]);
+    }
+}
+OUTPUT:enter the elements in arr1 is :1 2 3 4 5
+12345
 
