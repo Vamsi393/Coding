@@ -89,3 +89,8 @@ int main()
     printf("max element in the array is %d",min);
 }
 OUTPUT:max element in the array is 1
+
+
+
+
+
