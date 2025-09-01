@@ -57,3 +57,35 @@ int main()
 OUTPUT:
 enter the elements:1 2 3 4 5 6
 sum of the array all elements is:21
+
+Q 9. Write a program in C to find the maximum and minimum elements in an array?
+A)#include<stdio.h>
+int main()
+{
+    int arr[5]={1,2,3,4,5};
+    int max=arr[0];
+    for(int i=0;i<5;i++)
+    {
+        if(arr[i]>max)
+        {
+            max=arr[i];
+        }
+    }
+    printf("max element in the array is %d",max);
+}
+OUTPUT:max element in the array is 5
+#include<stdio.h>
+int main()
+{
+    int arr[5]={1,2,3,4,5};
+    int min=arr[0];
+    for(int i=0;i<5;i++)
+    {
+        if(arr[i]<min)
+        {
+            min=arr[i];
+        }
+    }
+    printf("max element in the array is %d",min);
+}
+OUTPUT:max element in the array is 1
