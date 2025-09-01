@@ -36,3 +36,24 @@ int main()
 }
 OUTPUT:enter the elements:1 2 3 4 5
 54321
+
+3Q) Write a program in C to find the sum of all elements of the array?
+A)#include<stdio.h>
+int main()
+{
+    int arr[6];
+    int i,sum=0;
+    printf("enter the elements:");
+    for(i=0;i<6;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    for(i=0;i<=5;i++)
+    {
+        sum=sum+arr[i];
+    }
+    printf("sum of the array all elements is:%d",sum);
+}
+OUTPUT:
+enter the elements:1 2 3 4 5 6
+sum of the array all elements is:21
