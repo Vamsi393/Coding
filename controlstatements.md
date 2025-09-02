@@ -16,7 +16,9 @@ printf("fibanoci number is %d",result);
 OUTPUT:
 enter the value of n5
 fibanoci number is 8```
-nclude<stdio.h>
+
+Q)swap of two numbers?
+include<stdio.h>
 int main()
 {
     int n1,n2,temp;
