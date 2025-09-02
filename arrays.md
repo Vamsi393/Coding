@@ -148,3 +148,41 @@ int main()
 OUTPUT:enter the elements:1 3 2 5 4 6
 elements in ascending order123456
 
+Q)12. Write a program in C to sort the elements of the array in descending order?
+A)#include<stdio.h>
+int main()
+{
+    int arr[5];
+    int i,j,a;
+    printf("enter the elements in array:");
+    for(i=0;i<5;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    for(i=0;i<5;i++)
+    {
+        for(j=i+1;j<5;j++)
+        {
+            if(arr[i]<arr[j])
+            {
+                a=arr[i];
+                arr[i]=arr[j];
+                arr[j]=a;
+            }
+        }
+    }
+    printf("elements in descending order\n");
+    for(i=0;i<5;i++)
+    {
+        printf("%d\n",arr[i]);
+    }
+    return 0;
+}
+OUTPUT:enter the elements in array:11 2 5 10 7
+elements in descending order
+11
+10
+7
+5
+2
+
