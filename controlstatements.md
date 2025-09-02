@@ -1,5 +1,5 @@
 ### fibanocci series?
-#include<stdio.h>
+```#include<stdio.h>
 int main(){
 int n,result;
 int a=0,b=1;
@@ -15,4 +15,4 @@ printf("fibanoci number is %d",result);
 }
 OUTPUT:
 enter the value of n5
-fibanoci number is 8
+fibanoci number is 8```
