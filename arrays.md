@@ -186,3 +186,32 @@ elements in descending order
 5
 2
 
+Q) 10. Write a program in C to separate odd and even integers into separate arrays?
+A)#include<stdio.h>
+int main()
+{
+    int arr[6];
+    int i,even=0,odd=0;
+    printf("enter the elements in the array:");
+    for(i=0;i<6;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    for(i=0;i<6;i++)
+    {
+        if(arr[i]%2==0)
+        {
+            even++;
+        }
+        else
+        {
+            odd++;
+        }
+    }
+    printf("%d\n",even);
+    printf("%d\n",odd);
+}
+OUTPUT:enter the elements in the array:2 4 6 8 1 3
+4
+2
+
