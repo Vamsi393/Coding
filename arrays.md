@@ -367,3 +367,43 @@ enter the elements in the array:1 2 1 4 1
 majority of the element is:1
 
 
+Q)1. Write a program to check if a given element is present in an array.
+A)#include<stdio.h>
+int main()
+{
+    int arr[10];
+    int i,n,key;
+    printf("enter the size of array:");
+    scanf("%d",&n);
+    printf("enter the elements in the array:");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    printf("enter the key number:");//key means element inside key number is present or not
+    scanf("%d",&key);
+    for(i=0;i<n;i++)
+    {
+        if (arr[i]==key)
+        {
+            printf("found at the elemnet index is:%d",i);
+            break;
+        }
+    }
+    if(arr[i]!=key)
+    {
+        printf("there is no found at the element");
+    }
+    
+}
+
+OUTPUT:enter the size of array:5
+enter the elements in the array:1 2 3 4 5
+enter the key number:4
+found at the elemnet index is:3
+enter the size of array:5
+enter the elements in the array:1 2 3 4 5
+enter the key number:7
+there is no found at the element
+
+
