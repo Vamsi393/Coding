@@ -323,4 +323,47 @@ ascii value of a character is 'b' 98
 ascii value of a character is 'c' 99
 ascii value of a character is 'd' 100
 
+Q)Write a program in C to find the majority element of an array.
+A)#include<stdio.h>
+int main()
+{
+    int arr[10];
+    int i,j,n,count;
+    printf("enter the size of array:");
+    scanf("%d",&n);
+    printf("enter the elements in the array:");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        count=0;
+        for(j=0;j<n;j++)
+        {
+            if (arr[i]==arr[j])
+            {
+                count++;
+            }
+            if(count>n/2)
+            {
+                printf("majority of the element is:%d\n",arr[i]);
+                return 0;
+            }
+        }
+        printf("there is no majority elements in the array");
+        return 0;
+        
+    }
+    
+    
+    
+}
+OUTPUT:enter the size of array:3
+enter the elements in the array:1 2 3
+there is no majority elements in the array
+enter the size of array:5
+enter the elements in the array:1 2 1 4 1
+majority of the element is:1
+
 
