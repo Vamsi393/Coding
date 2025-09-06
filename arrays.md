@@ -268,4 +268,33 @@ if (count==0)
 OUTPUT:enter the elements in the array:1 2 2 3 1
 231
 
+Q)print square of array elements in c?
+A)#include<stdio.h>
+int main()
+{
+    int arr[10];
+    int i,n,square;
+    printf("enter the size of array:");
+    scanf("%d",&n);
+    printf("enter the elements in the array:");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        square=arr[i]*arr[i];
+        printf("%d\n",square);
+        
+    }
+    
+}
+OUTPUT:enter the size of array:5
+enter the elements in the array:1 2 3 4 5
+1
+4
+9
+16
+25
+
 
