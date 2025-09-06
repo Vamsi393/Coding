@@ -241,3 +241,31 @@ int main()
 OUTPUT:enter the elements in the array:1 2 3 3 2
 2
 
+Q)REMOVE DUPLICATE ELEMENTS OR UNIQUE  ELEMENTS PRINTED?
+A)#include<stdio.h>
+int main()
+{
+    int arr[5];
+    int i,j,count=0;
+    printf("enter the elements in the array:");
+    for(i=0;i<5;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    for(i=0;i<5;i++)
+    {
+        count=0;
+        for(j=i+1;j<5;j++){
+                if(arr[i]==arr[j])
+                {
+                count++;
+            }
+}
+if (count==0)
+        printf("%d",arr[i]);
+}
+}
+OUTPUT:enter the elements in the array:1 2 2 3 1
+231
+
+
