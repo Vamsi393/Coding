@@ -296,5 +296,31 @@ enter the elements in the array:1 2 3 4 5
 9
 16
 25
+array
+
+Q)print ascii values using array in c?
+A)#include<stdio.h>
+int main()
+{
+    char arr[10];
+    int i,n;
+    printf("enter the size of array");
+    scanf("%d",&n);
+    printf("enter the elements in the array");
+    for(i=0;i<n;i++)
+    {
+        scanf(" %c",&arr[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        printf("ascii value of a character is '%c' %d\n",arr[i],arr[i]);
+    }
+}
+OUTPUT:enter the size of array4
+enter the elements in the arraya b c d
+ascii value of a character is 'a' 97
+ascii value of a character is 'b' 98
+ascii value of a character is 'c' 99
+ascii value of a character is 'd' 100
 
 
