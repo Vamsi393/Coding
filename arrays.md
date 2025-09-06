@@ -215,3 +215,29 @@ OUTPUT:enter the elements in the array:2 4 6 8 1 3
 4
 2
 
+Q)find the duplicate elements in the array?
+A)#include<stdio.h>
+int main()
+{
+    int arr[5];
+    int i,j,duplicate=0;
+    printf("enter the elements in the array:");
+    for(i=0;i<5;i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+    for(i=0;i<5;i++)
+    {
+        for(j=i+1;j<5;j++){
+            if (arr[i]==arr[j])
+            {
+                duplicate++;
+            }
+            
+        }
+    }
+    printf("%d",duplicate);
+}
+OUTPUT:enter the elements in the array:1 2 3 3 2
+2
+
