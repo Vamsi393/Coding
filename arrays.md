@@ -888,7 +888,8 @@ Q). Write a program in C to find the sum of rows and columns of a matrix?
 A)#include<stdio.h>
 int main()
 {
-    int a[10][10],i,j,r,c,sum=0;
+    int a[10][10],i,j,r,c;
+    int sumrow=0,sumcolumn=0;
     printf("enter the rows in matrix:");
     scanf("%d",&r);
     printf("enter the columns in matrix:");
@@ -912,31 +913,45 @@ int main()
         }
         printf("\n");
     }
+    //logic
         for(i=0;i<r;i++)
         {
+            sumrow=0;
             for(j=0;j<c;j++)
             {
-             sum=sum+a[i][j];
+             sumrow=sumrow+a[i][j];   
+            }
+            printf("sum of the rows is %d\n",sumrow);
         }
-    }
-    printf("sum of the left diaognlas in matrtix is %d",sum);
+        for(i=0;i<r;i++)
+        {
+            sumcolumn=0;
+            for(j=0;j<c;j++)
+            {
+             sumcolumn=sumcolumn+a[j][i];   
+            }
+            printf("sum of the column is %d\n",sumcolumn);
+        }
 }
-
-OUTPUT:enter the rows in matrix:2
-enter the columns in matrix:2
+OUTPUT:enter the rows in matrix:3
+enter the columns in matrix:3
 enter the elements in matrix:
 1
 2
 3
 4
+5
+6
+7
+8
+9
 original matrix given is:
-1	2	
-3	4	
-sum of the left diaognlas in matrtix is 10
-
-
-
-
-
-
-
+1	2	3	
+4	5	6	
+7	8	9	
+sum of the rows is 6
+sum of the rows is 15
+sum of the rows is 24
+sum of the column is 12
+sum of the column is 15
+sum of the column is 18
