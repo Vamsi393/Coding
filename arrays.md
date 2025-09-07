@@ -572,7 +572,20 @@ int main()
       }
       printf("\n");
   }
-  //printing the matrix c;enter the how many rows in matrix a:2
+  //printing the matrix c;
+  printf("the matrix c is given:\n");
+  for(i=0;i<r1;i++)
+  {
+      for(j=0;j<c1;j++)
+      {
+          printf("%d\t",c[i][j]);
+      }
+      printf("\n");
+  }
+  return 0;
+  
+}
+output:enter the how many rows in matrix a:2
 enter the how many columns in matrix a:2
 enter the how many rows in matrix b:2
 enter the how many columns in matrix b:2
@@ -593,19 +606,5 @@ the matrix b is given:
 the matrix c is given:
 0	0	
 0	0	
-  printf("the matrix c is given:\n");
-  for(i=0;i<r1;i++)
-  {
-      for(j=0;j<c1;j++)
-      {
-          printf("%d\t",c[i][j]);
-      }
-      printf("\n");
-  }
-  return 0;
-  
-}
-OUTPUT:
-
 
 
