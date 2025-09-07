@@ -963,3 +963,69 @@ sum of the rows is 24
 sum of the column is 12
 sum of the column is 15
 sum of the column is 18
+
+Q)Write a program in C to print or display the lower triangular of a given matrix?
+A)#include<stdio.h>
+int main()
+{
+    int a[10][10],r,c,i,j;
+    printf("enter the rows in matrix:");
+    scanf("%d",&r);
+    printf("enter the columns in matrix:");
+    scanf("%d",&c);
+    //reading of matrix;
+    printf("enter the elements in matrix:");
+    for(i=0;i<r;i++)
+    {
+        for(j=0;j<c;j++)
+        {
+            scanf("%d",&a[i][j]);
+        }
+    }
+    //printing of matrix;
+    printf("original matrix is given:\n");
+    for(i=0;i<r;i++){
+        for(j=0;j<c;j++)
+        {
+            printf("%d",a[i][j]);
+        }
+        printf("\n");
+    }
+    printf("the lower traingular matrix:\n");
+    for(i=0;i<r;i++)
+    {
+        for(j=0;j<c;j++)
+        {
+            if(i>=j)
+            {
+                printf("%d",a[i][j]);
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    
+}
+OUTPUT:enter the rows in matrix:3
+enter the columns in matrix:3
+enter the elements in matrix:1
+2
+3
+4
+5
+6
+7
+8
+9
+original matrix is given:
+123
+456
+789
+the lower traingular matrix:
+1  
+45 
+789
+
