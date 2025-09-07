@@ -703,7 +703,72 @@ the original matrix b is:
 3	4	
 the original matrix c is:
 1	4	
-9	16	
+9	16
+
+
+Q)Write a program in C to find the transpose of a given matrix?
+A)#include<stdio.h>
+int main()
+{
+    int a[10][10],t[10][10],i,j,r,c;
+    printf("enter the how many rows in matrix:");
+    scanf("%d",&r);
+    printf("enter the how many columns in matrix:");
+    scanf("%d",&c);
+    //reading of matrix
+    printf("enter the elements in matrix:\n");
+    for(i=0;i<r;i++)
+    {
+        for(j=0;j<c;j++)
+        {
+            scanf("%d",&a[i][j]);
+        }
+    }
+    //logic of transpose
+    for(i=0;i<r;i++)
+    {
+        for(j=0;j<c;j++)
+        {
+            t[j][i]=a[i][j];//swap indicates
+        }
+    }
+    //printing of matrix a;
+    printf("original matrix is:\n");
+    for(i=0;i<r;i++)
+    {
+        for(j=0;j<c;j++)
+        {
+            printf("%d\t",a[i][j]);
+        }
+        printf("\n");
+        
+    }
+    //printing of transpose is ;
+    printf("transpose matrix is:\n");
+    for(i=0;i<c;i++)
+    {
+        for(j=0;j<r;j++)
+        {
+            printf("%d\t",t[i][j]);
+        }
+        printf("\n");
+        
+    }
+    return 0;
+}
+OUTPUT:enter the how many rows in matrix:2
+enter the how many columns in matrix:2
+enter the elements in matrix:
+1
+2
+3
+4
+original matrix is:
+1	2	
+3	4	
+transpose matrix is:
+1	3	
+2	4
 
 
 
