@@ -884,6 +884,57 @@ original matrix given is:
 sum of the left diaognlas in matrtix is 8
 
 
+Q). Write a program in C to find the sum of rows and columns of a matrix?
+A)#include<stdio.h>
+int main()
+{
+    int a[10][10],i,j,r,c,sum=0;
+    printf("enter the rows in matrix:");
+    scanf("%d",&r);
+    printf("enter the columns in matrix:");
+    scanf("%d",&c);
+    //reading of matrix;
+    printf("enter the elements in matrix:\n");
+    for(i=0;i<r;i++)
+    {
+        for(j=0;j<c;j++)
+        {
+            scanf("%d",&a[i][j]);
+        }
+    }
+    //printing of matrix;
+    printf("original matrix given is:\n");
+    for(i=0;i<r;i++)
+    {
+        for(j=0;j<c;j++)
+        {
+            printf("%d\t",a[i][j]);
+        }
+        printf("\n");
+    }
+        for(i=0;i<r;i++)
+        {
+            for(j=0;j<c;j++)
+            {
+             sum=sum+a[i][j];
+        }
+    }
+    printf("sum of the left diaognlas in matrtix is %d",sum);
+}
+
+OUTPUT:enter the rows in matrix:2
+enter the columns in matrix:2
+enter the elements in matrix:
+1
+2
+3
+4
+original matrix given is:
+1	2	
+3	4	
+sum of the left diaognlas in matrtix is 10
+
+
 
 
 
