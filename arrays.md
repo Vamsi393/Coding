@@ -831,8 +831,8 @@ original matrix given is:
 sum of the right diaognlas in matrtix is 15
 
 Q). Write a program in C to find the sum of the left diagonals of a matrix?
-A)#include<stdio.h>
-int main()
+A) #include<stdio.h>
+ int main()
 {
     int a[10][10],i,j,r,c,sum=0;
     printf("enter the rows in matrix:");
@@ -864,25 +864,33 @@ int main()
             {
         
             if(i==j)
-            {
-                sum=sum+a[i][j];
-            }
+       {
+             sum=sum+a[i][j];
         }
+        
     }
-    printf("sum of the left diaognlas in matrtix is %d",sum);
 }
-OUTPUT:enter the rows in matrix:2
-enter the columns in matrix:2
+printf("sum of the left diaognlas in matrtix is %d",sum);
+}
+OUTPUT:enter the rows in matrix:3
+enter the columns in matrix:3
 enter the elements in matrix:
 1
 2
+3
+4
+5
 6
 7
+8
+9
 original matrix given is:
-1	2	
-6	7	
-sum of the left diaognlas in matrtix is 8
+1	2	3	
+4	5	6	
+7	8	9	
+sum of the left diaognlas in matrtix is 15
 
+    
 
 Q). Write a program in C to find the sum of rows and columns of a matrix?
 A)#include<stdio.h>
