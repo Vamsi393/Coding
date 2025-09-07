@@ -406,4 +406,113 @@ enter the elements in the array:1 2 3 4 5
 enter the key number:7
 there is no found at the element
 
+Q)Write a program in C for adding two matrices of the same size?
+A)#include<stdio.h>
+int main()
+{
+    int a[10][10],b[10][10],c[10][10],r1,r2,c1,c2,i,j;
+    printf("enter rows of matrix a:");
+    scanf("%d",&r1);
+    printf("enter the columns of matrix a:");
+    scanf("%d",&c1);
+    printf("enter the rows of materix b:");
+    scanf("%d",&r2);
+    printf("enter the columns of matrix b:");
+    scanf("%d",&c2);
+    //reading of matrix a
+     printf("enter the matrix a elements:",(r1*c1));
+     for(i=0;i<r1;i++)
+     {
+         for(j=0;j<c1;j++)
+         {
+         scanf("%d",&a[i][j]);
+         }
+     }
+     //reading of matrix b;
+     printf("enter the matrix b elements:",(r2*c2));
+     for(i=0;i<r2;i++)
+     {
+         for(j=0;j<c2;j++)
+         {
+             scanf("%d",&b[i][j]);
+         }
+     }
+     //addition logic
+     for(i=0;i<r1;i++)
+     {
+         for(j=0;j<c1;j++)
+         {
+             c[i][j]=a[i][j]+b[i][j];
+         }
+     }
+     //printing of matrix a;
+     printf("the matrix a is given:\n");
+     for(i=0;i<r1;i++)
+     {
+         for(j=0;j<c1;j++)
+         {
+             printf("%d\t",a[i][j]);
+         }
+         printf("\n");
+     }
+     //printing matrix b;
+     printf("the matrix b is given:\n");
+     for(i=0;i<r2;i++)
+     {
+         for(j=0;j<c2;j++)
+         {
+             printf("%d\t",b[i][j]);
+         }
+         printf("\n");
+     }
+     //printing matrx c is ;
+     printf("the matrix c is given:\n");
+     for(i=0;i<r1;i++)
+     {
+         for(j=0;j<c1;j++)
+         {
+             printf("%d\t",c[i][j]);
+         }
+         printf("\n");
+     }
+     return 0;
+     
+}
+OUTPUT:
+enter rows of matrix a:3
+enter the columns of matrix a:3
+enter the rows of materix b:3
+enter the columns of matrix b:3
+enter the matrix a elements:1
+2
+3
+4
+5
+6
+7
+8
+9
+enter the matrix b elements:1
+2
+3
+4
+5
+6
+7
+8
+9
+the matrix a is given:
+1	2	3	
+4	5	6	
+7	8	9	
+the matrix b is given:
+1	2	3	
+4	5	6	
+7	8	9	
+the matrix c is given:
+2	4	6	
+8	10	12	
+14	16	18	
+
+
 
