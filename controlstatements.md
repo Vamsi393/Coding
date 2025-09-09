@@ -84,3 +84,23 @@ enter the number:9
 square of the number is 81
 enter the number:12
 square of the number is 144
+
+Q)SUM OF THE DIGITS OF NUMBER?
+A)#include<stdio.h>
+int main()
+{
+    int n,rem,sum=0;
+    printf("enter the number of digits:");
+    scanf("%d",&n);
+    while(n>0)
+    {
+        rem=n%10;
+        sum=sum+rem;
+        n=n/10;
+    }
+     printf("%d",sum);
+    
+}
+OUTPUT:enter the number of digits:12345
+15
+
