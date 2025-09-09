@@ -121,5 +121,23 @@ int main()
 OUTPUT:enter the digits of number:247
 product of the number is 56
 
+Q)FACTORIAL OF THE NUMBER?
+A)#include<stdio.h>
+int main()
+{
+    int n,fact=1;
+    printf("enter the factorial number:");
+    scanf("%d",&n);
+    while(n>0)
+    {
+        fact=fact*n;
+        n--;
+    }
+    printf("factorial of the number is %d",fact);
+}
+OUTPUT:enter the factorial number:5
+factorial of the number is 120
+
+
 
 
