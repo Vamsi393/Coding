@@ -156,6 +156,36 @@ int main()
 OUTPUT:enter the digits of number:123
 reverse of the number is 321
 
+Q)NUMBER IS PALINDROME OR NOT?
+A)#include<stdio.h>
+int main()
+{
+    int n,reverse=0,rem,original;
+    printf("enter the digits of number:");
+    scanf("%d",&n);
+    original=n;
+    while(n>0)
+    {
+        rem=n%10;
+        reverse=(reverse*10)+rem;
+        n=n/10;
+    }
+    printf("reverse of the number is %d\n",reverse);
+    if(reverse == original)
+    {
+    printf("this number is palindrome :%d",original);
+    }
+    else
+    {
+        printf("this number is not palindrome:%d",original);
+    }
+}
+OUTPUT:enter the digits of number:345
+reverse of the number is 543
+this number is not palindrome:345
+enter the digits of number:454
+reverse of the number is 454
+this number is palindrome :454 
 
 
 
