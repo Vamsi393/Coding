@@ -103,4 +103,23 @@ int main()
 }
 OUTPUT:enter the number of digits:12345
 15
+Q)PRODUCT OF THE NUMBER OF DIGITS?
+A)#include<stdio.h>
+int main()
+{
+    int n,rem,product=1;
+    printf("enter the digits of number:");
+    scanf("%d",&n);
+    while(n>0)
+    {
+        rem=n%10;
+        product=product*rem;
+        n=n/10;
+    }
+    printf("product of the number is %d",product);
+}
+OUTPUT:enter the digits of number:247
+product of the number is 56
+
+
 
