@@ -34,3 +34,20 @@ int main()
     
     
 }
+Q)power of the number?
+A)#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int result,base,exponent;
+    printf("enter the base number:");
+    scanf("%d",&base);
+    printf("enter the exponent number:");
+    scanf("%d",&exponent);
+    result=pow(base,exponent);
+    printf("power of the numbers is %d",result);
+}
+OUTPUT:enter the base number:5
+enter the exponent number:2
+power of the numbers is 25
+
