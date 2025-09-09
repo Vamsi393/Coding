@@ -138,6 +138,24 @@ int main()
 OUTPUT:enter the factorial number:5
 factorial of the number is 120
 
+Q)REVERSE OF THE NUMBER?
+A)#include<stdio.h>
+int main()
+{
+    int n,reverse=0,rem;
+    printf("enter the digits of number:");
+    scanf("%d",&n);
+    while(n>0)
+    {
+        rem=n%10;
+        reverse=(reverse*10)+rem;
+        n=n/10;
+    }
+    printf("reverse of the number is %d",reverse);
+}
+OUTPUT:enter the digits of number:123
+reverse of the number is 321
+
 
 
 
