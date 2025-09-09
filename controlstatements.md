@@ -66,3 +66,21 @@ int main()
 }
 OUTPUT:enter the number of square:64
 square of the number is 8
+
+Q)SQUARE OF THE NUMBER?
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+   int n,result;
+   printf("enter the number:");
+   scanf("%d",&n);
+   result=n*n;
+   printf("square of the number is %d",result);
+}
+OUTPUT:enter the number:2
+square of the number is 4
+enter the number:9
+square of the number is 81
+enter the number:12
+square of the number is 144
