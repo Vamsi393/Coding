@@ -51,3 +51,18 @@ OUTPUT:enter the base number:5
 enter the exponent number:2
 power of the numbers is 25
 
+
+Q)squareroot of the number?
+A)#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int n,sqareroot;
+    printf("enter the number of square:");
+    scanf("%d",&n);
+    sqareroot=sqrt(n);
+    printf("square of the number is %d",sqareroot);
+    
+}
+OUTPUT:enter the number of square:64
+square of the number is 8
