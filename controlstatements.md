@@ -287,6 +287,28 @@ int main()
 OUTPUT:enter the decimal number:30
 36
 
+Q)WRITE A C PROGRAM CONVERT DECIMAL NUMBER TO HEXANUMBER?
+A)#include<stdio.h>
+int main()
+{
+    int n,i=0,j,hexa[32];
+    printf("enter the decimal number:");
+    scanf("%d",&n);
+    while(n>0)
+    {
+    hexa[i]=n%16;
+    n=n/16;
+    i++;
+    }
+    for(j=i-1;j>=0;j--)
+    {
+        printf("%x",hexa[j]);
+    }
+    
+}
+OUTPUT:enter the decimal number:30
+1e
+
 
 
 
