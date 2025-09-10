@@ -309,6 +309,28 @@ int main()
 OUTPUT:enter the decimal number:30
 1e
 
+Q)WRITE A C PROGRAM CONVERT BINARY NUMBER TO DECIMAL NUMBER?
+A)#include<stdio.h>
+int main()
+{
+int n,decimal=0,base=1,rem;
+printf("enter the binarry number:");
+scanf("%d",&n);
+while(n>0)
+{
+    rem=n%10;
+    decimal=decimal+rem*base;
+    n=n/10;
+    base=base*2;
+}
+printf("%d",decimal);
+
+}
+OUTPUT:enter the binarry number:1110
+14
+enter the binarry number:10101
+21
+
 
 
 
