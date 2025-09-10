@@ -352,6 +352,29 @@ decimal number is=156
 enter the octal number:131
 decimal number is=89
 
+Q))WRITE A C PROGRAM CONVERT HEXA DECIMAL NUMBER TO DECIMAL NUMBER?
+A)#include<stdio.h>
+int main()
+{
+    int n,decimal=0,base=1,rem;
+    printf("enter the hexa decimal number:");
+    scanf("%d",&n);
+    while(n>0)
+    {
+        rem=n%10;
+        decimal=decimal+rem*base;
+        n=n/10;
+        base=base*16;
+    }
+    printf("decimal number=%d",decimal);
+    return 0;
+}
+OUTPUT:enter the hexa decimal number:1e2a
+decimal number=1
+enter the hexa decimal number:1011
+decimal number=4113
+
+
 
 
 
