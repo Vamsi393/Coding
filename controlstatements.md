@@ -242,6 +242,30 @@ this is armstrong number
 enter the number:123
 this is not armstrong number
 
+Q)WRITE A C PROGRAM CONVERT DECIMAL NUMBER TO BINARY NUMBER?
+A)#include<stdio.h>
+int main()
+{
+    int n,i=0,j,binary[32];
+    printf("enter the decimal number:");
+    scanf("%d",&n);
+    while(n>0)
+    {
+        binary[i]=n%2;
+        n=n/2;
+        i++;
+    }
+    for(j=i-1;j>=0;j--)
+    {
+        printf("%d",binary[j]);
+    }
+    return 0;
+}
+OUTPUT:enter the decimal number:29
+11101
+enter the decimal number:9
+1001
+
 
 
 
