@@ -185,7 +185,34 @@ reverse of the number is 543
 this number is not palindrome:345
 enter the digits of number:454
 reverse of the number is 454
-this number is palindrome :454 
+this number is palindrome :454
+
+Q)NUMBER IS PRIME OR NOT?
+A)#include<stdio.h>
+int main()
+{
+    int n,i;
+    printf("enter the number:");
+    scanf("%d",&n);
+    for(i=2;i<n;i++)
+    {
+        if(n%i==0)
+        {
+            printf("this is not prime number %d",n);
+            break;
+        }
+        else
+        {
+            printf("this is prime number%d",n);
+        }
+    }
+}
+
+OUTPUT:enter the number:4
+this is not prime number 4
+enter the number:3
+this is prime number3
+
 
 
 
