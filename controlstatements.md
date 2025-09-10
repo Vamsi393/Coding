@@ -266,6 +266,27 @@ OUTPUT:enter the decimal number:29
 enter the decimal number:9
 1001
 
+Q)WRITE A C PROGRAM CONVERT DECIMAL NUMBER TO octal NUMBER?
+A)#include<stdio.h>
+int main()
+{
+    int n,octal[32],i=0,j;
+    printf("enter the decimal number:");
+    scanf("%d",&n);
+    while(n>0)
+    {
+        octal[i]=n%8;
+        n=n/8;
+        i++;
+    }
+    for(j=i-1;j>=0;j--)
+    {
+        printf("%d",octal[j]);
+    }
+}
+OUTPUT:enter the decimal number:30
+36
+
 
 
 
