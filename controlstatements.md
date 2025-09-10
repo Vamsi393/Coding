@@ -331,6 +331,27 @@ OUTPUT:enter the binarry number:1110
 enter the binarry number:10101
 21
 
+Q)Q)WRITE A C PROGRAM CONVERT octal NUMBER TO DECIMAL NUMBER?
+A)#include<stdio.h>
+int main()
+{
+    int n,decimal=0,base=1,rem;
+    printf("enter the octal number:");
+    scanf("%d",&n);
+    while(n>0)
+    {
+        rem=n%10;
+        decimal=decimal+rem*base;
+        n=n/10;
+        base=base*8;
+    }
+    printf("decimal number is=%d",decimal);
+}
+OUTPUT:enter the octal number:234
+decimal number is=156
+enter the octal number:131
+decimal number is=89
+
 
 
 
