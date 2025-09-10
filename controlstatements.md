@@ -213,6 +213,35 @@ this is not prime number 4
 enter the number:3
 this is prime number3
 
+Q)NUMBER IS ARMSTRONG OR NOT?
+A)#include<stdio.h>
+int main()
+{
+    int n,rem,cube,sum=0,vamsi;
+    printf("enter the number:");
+    scanf("%d",&n);
+    vamsi=n;
+    while(n>0)
+    {
+        rem=n%10;
+        cube=rem*rem*rem;
+        sum=sum+cube;
+        n=n/10;
+    }
+    if(vamsi==sum)
+    {
+        printf("this is armstrong number");
+    }
+    else
+    {
+        printf("this is not armstrong number");
+    }
+}
+OUTPUT:enter the number:153
+this is armstrong number
+enter the number:123
+this is not armstrong number
+
 
 
 
