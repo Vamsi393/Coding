@@ -164,6 +164,28 @@ int main()
     }
 }
 
+Q)
+A
+BB
+CCC
+DDDD
+EEEEE
+A)#include<stdio.h>
+int main()
+{
+    int rows,cols,n;
+    printf("enter the number:");
+    scanf("%d",&n);
+    for(rows=1;rows<=n;rows++)
+    {
+        for(cols=1;cols<=rows;cols++)
+        {
+            printf("%c",rows+64);
+        }
+        printf("\n");
+    }
+}
+
 
 
 
