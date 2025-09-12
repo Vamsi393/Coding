@@ -255,3 +255,26 @@ int main()
         printf("\n");
     }
 }
+
+Q)
+5 4 3 2 1 
+5 4 3 2 
+5 4 3 
+5 4 
+5 
+A)
+#include<stdio.h>
+int main()
+{
+    int rows,cols,n;
+    printf("enter the number:");
+    scanf("%d",&n);
+    for(rows=1;rows<=n;rows++)
+    {
+        for(cols=1;cols<=n-rows+1;cols++)
+        {
+            printf("%d ",n-cols+1);
+        }
+        printf("\n");
+    }
+}
