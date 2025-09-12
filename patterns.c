@@ -232,4 +232,26 @@ int main()
 }
 
 
-
+Q)
+6 6 6 6 6 6 
+5 5 5 5 5 
+4 4 4 4 
+3 3 3 
+2 2 
+1 
+A)
+#include<stdio.h>
+int main()
+{
+    int rows,cols,n;
+    printf("enter the number:");
+    scanf("%d",&n);
+    for(rows=1;rows<=n;rows++)
+    {
+        for(cols=1;cols<=n-rows+1;cols++)
+        {
+            printf("%d ",n-rows+1);
+        }
+        printf("\n");
+    }
+}
