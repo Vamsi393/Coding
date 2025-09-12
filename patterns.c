@@ -118,6 +118,28 @@ int main()
     }
 }
 
+Q)
+1
+12
+123
+1234
+12345
+#include<stdio.h>
+int main()
+{
+    int rows,cols,n;
+    printf("enter the number:");
+    scanf("%d",&n);
+    for(rows=1;rows<=n;rows++)
+    {
+        for(cols=1;cols<=rows;cols++)
+        {
+            printf("%d",rows);
+        }
+        printf("\n");
+    }
+}
+
 
 
 
