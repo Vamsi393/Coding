@@ -771,6 +771,43 @@ int main()
     }
 }
 
+Q)
+*
+**
+***
+****
+*****
+******
+*****
+****
+***
+**
+*
+A)
+#include<stdio.h>
+int main()
+{
+    int rows,cols,n;
+    printf("enter the number:");
+    scanf("%d",&n);
+    for(rows=1;rows<=n;rows++)
+    {
+        for(cols=1;cols<=rows;cols++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    for(rows=1;rows<n;rows++)
+    {
+        for(cols=1;cols<=n-rows;cols++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+}
+
 
  
 
