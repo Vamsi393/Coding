@@ -547,6 +547,33 @@ int main()
     return 0;
 }
 
+Q)
+   1 
+  1 2 
+ 1 2 3 
+1 2 3 4 
+1 2 3 4 5 
+A)
+#include<stdio.h>
+int main()
+{
+    int rows,cols,spaces,n;
+    printf("enter the number:");
+    scanf("%d",&n);
+    for(rows=1;rows<=n;rows++)
+    {
+        for(spaces=1;spaces<n-rows;spaces++)
+        {
+            printf(" ");
+        }
+        for(cols=1;cols<=rows;cols++)
+        {
+            printf("%d ",cols);
+        }
+        printf("\n");
+    }
+    return 0;
+}
 
 
  
