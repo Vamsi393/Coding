@@ -438,6 +438,33 @@ int main()
     }
 }
 
+Q)
+54321
+ 5432
+  543
+   54
+    5
+A)
+#include<stdio.h>
+int main()
+{
+    int rows,cols,n,spaces;
+    printf("enter the number:");
+    scanf("%d",&n);
+    for(rows=1;rows<=n;rows++)
+    {
+        for(spaces=1;spaces<=rows-1;spaces++)
+        {
+            printf(" ");
+        }
+        for(cols=0;cols<=n-rows;cols++)
+        {
+            printf("%d",n-cols);
+        }
+        printf("\n");
+    }
+}
+
 
 
  
