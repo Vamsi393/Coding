@@ -808,6 +808,40 @@ int main()
     }
 }
 
+Q)
+1
+22
+333
+4444
+55555
+1111
+222
+33
+4
+A)
+#include<stdio.h>
+int main()
+{
+    int rows,cols,n;
+    printf("enter the number:");
+    scanf("%d",&n);
+    for(rows=1;rows<=n;rows++)
+    {
+        for(cols=1;cols<=rows;cols++)
+        {
+            printf("%d",rows);
+        }
+        printf("\n");
+    }
+    for(rows=1;rows<n;rows++)
+    {
+        for(cols=1;cols<=n-rows;cols++)
+        {
+            printf("%d",rows);
+        }
+        printf("\n");
+    }
+}
 
  
 
