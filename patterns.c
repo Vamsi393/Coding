@@ -1165,6 +1165,32 @@ int main()
     }
 } 
 
+Q)
+    *
+   ***
+  *****
+ *******
+*********
+A)#include<stdio.h>
+int main()
+{
+    int rows,cols,spaces,n;
+    printf("enter the number:");
+    scanf("%d",&n);
+    for(rows=1;rows<=n;rows++)
+    {
+        for(spaces=1;spaces<=n-rows;spaces++)
+        {
+            printf(" ");
+        }
+        for(cols=1;cols<=2*rows-1;cols++)//because of 2 is used->1st row 1 star,2nd row 3stars,3rd row->5 strs------- so every row is 2 stars increased so 2*rows-1
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+}
+
 
 
  
