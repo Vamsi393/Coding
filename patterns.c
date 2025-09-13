@@ -1078,6 +1078,51 @@ int main()
     }
 }
 
+Q)
+    A 
+   A B 
+  A B C 
+ A B C D 
+A B C D E 
+ A B C D 
+  A B C 
+   A B 
+    A 
+A)
+#include<stdio.h>
+int main()
+{
+    int rows,cols,spaces,n;
+    printf("enter the number:");
+    scanf("%d",&n);
+    for(rows=1;rows<=n;rows++)
+    {
+        for(spaces=1;spaces<=n-rows;spaces++)
+        {
+            printf(" ");
+        }
+        for(cols=1;cols<=rows;cols++)
+        {
+            printf("%c ",cols+64);
+        }
+        printf("\n");
+    }
+    for(rows=1;rows<n;rows++)
+    {
+        for(spaces=1;spaces<=rows;spaces++)
+        {
+            printf(" ");
+        }
+        for(cols=1;cols<=n-rows;cols++)
+        {
+            printf("%c ",cols+64);
+        }
+        printf("\n");
+    }
+}
+
+
+
  
 
 
