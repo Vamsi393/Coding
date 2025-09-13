@@ -663,6 +663,61 @@ int main()
     }
 }
 
+Q)
+1 1 1 1 1 
+ 2 2 2 2 
+  3 3 3 
+   4 4 
+    5 
+A)
+#include<stdio.h>
+int main()
+{
+    int rows,cols,spaces,n;
+    printf("enter the number:");
+    scanf("%d",&n);
+    for(rows=1;rows<=n;rows++)
+    {
+        for(spaces=1;spaces<=rows-1;spaces++)
+        {
+            printf(" ");
+        }
+        for(cols=1;cols<=n-rows+1;cols++)
+        {
+            printf("%d ",rows);
+        }
+        printf("\n");
+    }
+}
+
+Q)
+1 2 3 4 5 
+ 1 2 3 4 
+  1 2 3 
+   1 2 
+    1 
+A)
+#include<stdio.h>
+int main()
+{
+    int rows,cols,spaces,n;
+    printf("enter the number:");
+    scanf("%d",&n);
+    for(rows=1;rows<=n;rows++)
+    {
+        for(spaces=1;spaces<=rows-1;spaces++)
+        {
+            printf(" ");
+        }
+        for(cols=1;cols<=n-rows+1;cols++)
+        {
+            printf("%d ",cols);
+        }
+        printf("\n");
+    }
+}
+
+
 
  
 
