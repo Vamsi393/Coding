@@ -1218,6 +1218,49 @@ int main()
     }
 }
 
+Q)
+    *
+   ***
+  *****
+ *******
+*********
+ *******
+  *****
+   ***
+    *
+A)#include<stdio.h>
+int main()
+{
+    int rows,cols,spaces,n;
+    printf("enter the number:");
+    scanf("%d",&n);
+    for(rows=1;rows<=n;rows++)
+    {
+        for(spaces=1;spaces<=n-rows;spaces++)
+        {
+            printf(" ");
+        }
+        for(cols=1;cols<=2*rows-1;cols++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+    for(rows=1;rows<n;rows++)
+    {
+        for(spaces=1;spaces<=rows;spaces++)
+        {
+            printf(" ");
+        }
+        for(cols=1;cols<=2*(n-rows)-1;cols++)
+        {
+            printf("*");
+        }
+        printf("\n");
+    }
+}
+
+
 
 
  
