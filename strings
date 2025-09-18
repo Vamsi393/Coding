@@ -156,6 +156,41 @@ enter the string 2:vamsi
 two  strings are equal
 
 
+WITHOUT USING LIBRARY FUNCTION
+#include<stdio.h>
+int main()
+{
+    int i,flag=0;
+    char str1[10];
+    printf("enter the string1:");
+    scanf("%s",str1);
+    char str2[10];
+    printf("enter the string2:");
+    scanf("%s",str2);
+    for(i=0;str1[i]!='\0'|| str2[i]!='\0';i++)
+    {
+       if(str1[i]!=str2[i])
+       {
+           flag++;
+           break;
+       }
+    }
+    if(flag==1)
+    {
+        printf("two strings are different");
+    }
+    else
+    {
+        printf("two strings are equal");
+    }
+}
+OUTPUT:
+enter the string1:vamsi
+enter the string2:rishna
+two strings are different
+enter the string1:vamsi
+enter the string2:vamsi
+two strings are equal
 
 
 #Write a program in C to read a sentence and replace lowercase characters with uppercase
