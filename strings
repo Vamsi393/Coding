@@ -28,6 +28,39 @@ int main()
         
 }
 ,,,
+Q)Write a C program to sort a string array in descending order?
+A)
+#include<stdio.h>
+int main()
+{
+char str[10];
+int i,j;
+printf("enter the string:");
+scanf("%s",str);
+for(i=0;str[i]!='\0';i++)
+{
+    for(j=i+1;str[j]!='\0';j++)
+    {
+        if(str[i]<str[j])
+        {
+            int a;
+            a=str[i];
+            str[i]=str[j];
+            str[j]=a;
+        }
+    }
+}
+     printf("string in ascending orde:\n");
+    for(i=0;str[i]!='\0';i++)
+    {
+        printf("%c",str[i]);
+    }
+}
+OUTPUT:
+enter the string:vamsi
+string in ascending orde:
+vsmia
+
 ##Write a C program to check whether a substring is present in a string?
 ,,,#include <stdio.h>
 #include<string.h>
