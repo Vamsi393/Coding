@@ -127,6 +127,35 @@ int main()
 OUTPUT:enter the string:vamsi krishna rama
 2
 
+Q)
+WRITE A PROGRAM TO COMPARE TWO STRINGS USING LIBRARY FUNCTION?
+A)
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char str1[10];
+    printf("enter the string 1:");
+    scanf("%s",str1);
+    char str2[10];
+    printf("enter the string 2:");
+    scanf("%s",str2);
+    strcmp(str1,str2);
+    if(strcmp(str1,str2)==0)
+    printf("two  strings are equal is");
+    else
+    printf("two strings are not equal");
+    
+}
+OUTPUT:
+enter the string 1:vamsi 
+enter the string 2:krishna
+two strings are not equal
+enter the string 1:vamsi
+enter the string 2:vamsi
+two  strings are equal
+
+
 
 
 #Write a program in C to read a sentence and replace lowercase characters with uppercase
