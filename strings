@@ -105,6 +105,28 @@ l
 lo
 o
 
+Q)WRITE A PROGRAM IN C TO COUNT THE TOTAL NUMBERS OF WORDS IN A STRING?
+A)
+#include<stdio.h>
+int main()
+{
+    char str[10];
+    int i;
+    printf("enter the string:");
+    fgets(str,sizeof(str),stdin);
+    int words=1;
+    for(i=0;str[i]!='\0';i++)
+    {
+        if(str[i]==' ' || str[i]=='\n' || str[i]=='\t')
+        {
+            words++;
+        }
+    }
+    printf("%d",words);
+}
+OUTPUT:enter the string:vamsi krishna rama
+2
+
 
 
 #Write a program in C to read a sentence and replace lowercase characters with uppercase
