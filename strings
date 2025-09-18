@@ -192,6 +192,44 @@ enter the string1:vamsi
 enter the string2:vamsi
 two strings are equal
 
+Q)
+FIND THE TOTAL NO OF ALPHABETS,DIGITS,SPECIAL NUMBERS IN A STRING?
+A)
+#include<stdio.h>
+int main()
+{
+    int i;
+    int alphabetscount=0;
+    int digitscount=0;
+    int specialscount=0;
+char str[10];
+printf("enter the string:");
+scanf("%s",str);
+for(i=0;str[i]!='\0';i++)
+{
+    if((str[i]>='A' && str[i]<='Z')|| (str[i]>='a' && str[i]<='z'))
+    {
+        alphabetscount++;
+    }
+    else if (str[i]>='0' && str[i]<='9')
+    {
+       digitscount++;    
+    }
+ else
+ {
+     specialscount++;
+ }
+}
+   printf("no.of alphabets is:%d\n",alphabetscount);
+   printf("no.of digits is:%d\n",digitscount);
+   printf("no.of specials is:%d\n",specialscount);
+}
+OUTPUT:
+enter the string:vamsi@123
+no.of alphabets is:5
+no.of digits is:3
+no.of specials is:1
+
 
 #Write a program in C to read a sentence and replace lowercase characters with uppercase
 and vice versa?
