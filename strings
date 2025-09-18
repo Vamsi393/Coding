@@ -230,6 +230,37 @@ no.of alphabets is:5
 no.of digits is:3
 no.of specials is:1
 
+Q)
+COUNT THE TOTAL NUMBER OF VOWELS OR CONSTANTS IN A STRING?
+A)
+#include<stdio.h>
+int main()
+{
+    int i;
+    int vowels=0,constants=0;
+    char str[10];
+    printf("enter the string;");
+    scanf("%s",str);
+    for(i=0;str[i]!='\0';i++)
+    {
+        if(str[i]=='a' || str[i]=='e' || str[i]=='i' || str[i]=='o' || str[i]=='u')
+        {
+            vowels++;
+        }
+        else
+        {
+            constants++;
+        }
+    }
+    printf("vowels of the string is %d\n",vowels);
+    printf("constants of the string is %d\n",constants);
+    
+}
+OUTPUT:
+enter the string;vamsi
+vowels of the string is 2
+constants of the string is 3
+
 
 #Write a program in C to read a sentence and replace lowercase characters with uppercase
 and vice versa?
