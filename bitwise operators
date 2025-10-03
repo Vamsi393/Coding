@@ -53,7 +53,7 @@ enter the position2:3
 enter the position3:1
 59
 
-3Q)
+4Q)
 WRITE A PROGRAM TO TOGGLE 7TH,5TH ,4TH AND 1st BIT OF NUMBER?
 A)
 #include<stdio.h>
