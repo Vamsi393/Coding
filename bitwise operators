@@ -1,1 +1,27 @@
-
+~~~
+WRITE A PROGRAM TO CLEAR 4TH AND 2ND BIT OF NUMBER?
+A)
+#include<stdio.h>
+int main()
+{
+    int num,pos1,pos2;
+     printf("enter the number:");
+    scanf("%d",&num);
+    printf("enter the pos:");
+    scanf("%d",&pos1);
+    printf("enter the pos1:");
+    scanf("%d",&pos2);
+    num=num&~(1<<pos1);
+    num=num&~(1<<pos2);
+    //num=num&~(1<<3);
+    //num=num&~(1<<1);
+    printf("original number is %d\n",num);
+    printf("after clearing is 4th and 2nd bit is %d",num);
+}
+OUTPUT:
+enter the number:13
+enter the pos:3
+enter the pos1:1
+original number is 5
+after clearing is 4th and 2nd bit is 5
+~~~
