@@ -25,3 +25,30 @@ enter the pos1:1
 original number is 5
 after clearing is 4th and 2nd bit is 5
 ~~~
+
+2Q)
+WRITE A PROGRAM TO SET 5TH ,3rs AND 1st BIT OF NUMBER?
+A)
+#include<stdio.h>
+int main()
+{
+    int num,pos1,pos2,pos3;
+    printf("enter the number:");
+    scanf("%d",&num);
+    printf("enter the position1:");
+    scanf("%d",&pos1);
+    printf("enter the position2:");
+   scanf("%d",&pos2);
+   printf("enter the position3:");
+   scanf("%d",&pos3);
+    num=num|(1<<pos1);
+    num=num|(1<<pos2);
+    num=num|(1<<pos3);
+    printf("%d",num);
+}
+OUTPUT:
+enter the number:25
+enter the position1:5
+enter the position2:3
+enter the position3:1
+59
