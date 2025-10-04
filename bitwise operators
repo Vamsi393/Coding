@@ -153,3 +153,21 @@ enter the number b:3
 after swapping a is :3
 after swapping b is :4
 
+Q)
+WRITE A PROGRAM TO SWAP LOWER AND HIGHER NIBBELS OF NUMBER?
+A)
+#include<stdio.h>
+int main()
+{
+    unsigned char num;
+    printf("enter a number(0-255):");
+    scanf("%hhu",&num);//hhx is used to because read the unsigned char
+    unsigned char result=((num&0x0f)<<4)|((num&0xf0)>>4);
+    printf("before swapping nibbles(original number):0x%02X\n",num);
+    printf("after swapping nibbles:0x%02X\n",result);
+}
+OUTPUT:
+enter a number(0-255):20
+before swapping nibbles(original number):0x14
+after swapping nibbles:0x41
+
