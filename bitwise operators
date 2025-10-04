@@ -259,3 +259,27 @@ enter the number:6
 0000000000000110
 enter the number:5
 0000000000000101
+
+Q)
+WRITE A PROGRAM TO COUNT THE NUMBER OF CLEARED BITS IN A NUMBER?
+A)
+#include<stdio.h>
+int main()
+{
+    int num,i,clearbits=0;
+    printf("enter the number:");
+    scanf("%d",&num);
+    for (i=0;i<15;i++)
+    {
+        if ((num&(1<<i))==0)
+        {
+            clearbits++;
+        }
+    }
+    printf("number of cleared bits is %d",clearbits);
+}
+OUTPUT:
+enter the number:4
+number of cleared bits is 14
+enter the number:10
+number of cleared bits is 13
