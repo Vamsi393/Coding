@@ -108,3 +108,26 @@ enter the pos2:1
 bit at position 2=1
 bit at position 1=0
 
+Q)WRITE A PROGRAM TO COUNT THE NUMBER OF SET BITS IN A NUMBER?
+A)
+#include<stdio.h>
+int main()
+{
+    int num,count=0;
+    printf("enter the number:");
+    scanf("%d",&num);
+    int temp=num;
+    while(temp>0)
+    {
+        if(temp&1)//check last bit is 1
+        {
+            count++;
+        }
+        temp=temp>>1;
+    }
+    printf("no.of set bits in number is %d=%d",num,count);
+}
+OUTPUT:
+enter the number:13
+no.of set bits in number is 13=3
+
