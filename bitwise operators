@@ -231,3 +231,31 @@ enter the number:8
 8 is a power of 2
 enter the number:10
 10 is not a power of 2
+
+Q)WRITE A PROGRAM TO PRINT BINARY DIGIT OF THE NUMBER?
+A)
+#include<stdio.h>
+int main()
+{
+    int n;
+    printf("enter the number:");
+    scanf("%d",&n);
+    for (int i=15;i>=0;i--)//i consider 16 bit so i=15
+    {
+        if (n&(1<<i))
+        {
+            printf("1");
+        }
+        else
+        {
+            printf("0");
+        }
+    }
+}
+OUTPUT:
+enter the number:1
+0000000000000001
+enter the number:6
+0000000000000110
+enter the number:5
+0000000000000101
