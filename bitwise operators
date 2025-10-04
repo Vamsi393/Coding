@@ -171,3 +171,19 @@ enter a number(0-255):20
 before swapping nibbles(original number):0x14
 after swapping nibbles:0x41
 
+Q)
+WRITE A PROGRAM TO MULTIPLY THE NUMBER BY 2?
+A)
+#include<stdio.h>
+int main()
+{
+    int num,result;
+    printf("enter the number:");
+    scanf("%d",&num);
+    result=num<<1;
+    printf("given number multiply of 2 is %d",result);
+}
+OUTPUT:
+enter the number:3
+given number multiply of 2 is 6
+
