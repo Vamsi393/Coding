@@ -283,3 +283,26 @@ enter the number:4
 number of cleared bits is 14
 enter the number:10
 number of cleared bits is 13
+
+Q)
+WRITE A PROGRAM TO COUNT THE NUMBER OF SET BITS IN A NUMBER?
+A)
+#include<stdio.h>
+int main()
+{
+    int num,i,setbits=0;
+    printf("enter the number:");
+    scanf("%d",&num);
+    for (i=0;i<15;i++)
+    {
+        if (num&(1<<i))
+        {
+            setbits++;
+        }
+    }
+    printf("number of set bits is %d",setbits);
+}
+OUTPUT:
+enter the number:4
+number of set bits is 1
+
