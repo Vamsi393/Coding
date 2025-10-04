@@ -131,3 +131,25 @@ OUTPUT:
 enter the number:13
 no.of set bits in number is 13=3
 
+Q)WRITE A PROGRAM TO SWAP TWO NUMBERS WITHOUT USING THIRD VARIABLE?
+A)
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    printf("enter the number a:");
+    scanf("%d",&a);
+    printf("enter the number b:");
+    scanf("%d",&b);
+    a=a^b;
+    b=a^b;
+    a=a^b;
+    printf("after swapping a is :%d\n",a);
+    printf("after swapping b is :%d",b);
+}
+OUTPUT:
+enter the number a:4
+enter the number b:3
+after swapping a is :3
+after swapping b is :4
+
