@@ -82,3 +82,29 @@ enter the position2:5
 enter the position3:4
 enter the position4:1
 169
+
+3)Q
+WRITE A PROGRAM TO FIND THE STATE OF 3RD AND 2ND BIT OF NUMBER?
+A)
+#include<stdio.h>
+int main()
+{
+    int num,pos1,pos2;
+    printf("enter the number:");
+    scanf("%d",&num);
+    printf("enter the pos1:");
+    scanf("%d",&pos1);
+    printf("enter the pos2:");
+    scanf("%d",&pos2);
+    int bit1=num&(1<<pos1)?1:0;
+    int bit2=num&(1<<pos2)?1:0;
+    printf("bit at position %d=%d\n",pos1,bit1);
+     printf("bit at position %d=%d\n",pos2,bit2);
+}
+OUTPUT:
+enter the number:13
+enter the pos1:2
+enter the pos2:1
+bit at position 2=1
+bit at position 1=0
+
