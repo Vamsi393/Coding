@@ -1,4 +1,4 @@
-~~~
+~~~Q)TRAVERSING FUNCTION?
 #include<stdio.h>
 #include<stdlib.h>//used for malloc 
 struct node
@@ -82,5 +82,51 @@ void countofnodes(struct node*head)
     }
 OUTPUT:
 no.of nodes in linked list is 3
+
+Q)
+WRITE A PROGRAM ADDING A NODE TO BEGINING OF THE LINKED LIST?
+A)
+#include<stdio.h>
+#include<stdlib.h>
+struct node
+{
+    int data;
+    struct node*link;
+};
+void addnodebeg(struct node*head,int d);
+int main()
+{
+    struct node*head;
+    head=malloc(sizeof(struct node));
+    head->data=45;
+    head->link=NULL;
+    struct node*current;
+    current=malloc(sizeof(struct node));
+    current->data=55;
+    current->link=NULL;
+    head->link=current;
+    int data;
+    
+    addnodebeg(head,data);
+}
+void addnodebeg(struct node*head,int d)
+{
+    
+struct node*new;
+new=malloc(sizeof(struct node));
+new->data=65;
+new->link=NULL;
+new->link=head;
+head=new;
+struct node*tmp;
+tmp=head;
+while(tmp!=NULL)
+{
+    printf("%d->",tmp->data);
+    tmp=tmp->link;
+}
+}
+OUTPUT:
+65->45->55
     
 
