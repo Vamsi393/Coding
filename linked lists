@@ -324,5 +324,65 @@ while(ptr!=NULL)
 }
 OUTPUT:
 15 25 35 
+
+
+
+#include<stdio.h>
+#include<stdlib.h>
+struct node
+{
+    int data;
+    struct node*link;
+};
+struct node*insertnode(int data);
+int main()
+{
+    struct node*head;
+    head=malloc(sizeof(struct node));
+    head->data=15;
+    head->link=NULL;
+    struct node*current;
+    current=malloc(sizeof(struct node));
+    current->data=25;
+    current->link=NULL;
+    head->link=current;
+   // current=malloc(sizeof(struct node));
+    //current->data=35;
+    //current->link=NULL;
+    //head->link->link=current;
+    //current=malloc(sizeof(struct node));
+    //current->data=45;
+    //current->link=NULL;
+    //head->link->link->link=current;
+    int d=40;;
+    insertnode(d);
+}
+struct node* insertnode(int data)
+{
+    struct node *head,*new,*p,*prev;
+    new=malloc(sizeof(struct node));
+    new->data=data;
+    new->link=NULL;
+    if (head==NULL)
+    {
+        head=new;
+        return 0;
+    }
+    p=head;
+    while(data > p->data)
+    {
+        prev=p;
+        p=p->link;
+    }
+    prev->link=new;
+    new->link=p;
+struct node*tmp;
+tmp=head;
+while(tmp!=NULL)
+{
+    printf("%d\t",tmp->data);
+    tmp=tmp->link;
+}
+}
     
 
