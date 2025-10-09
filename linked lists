@@ -389,3 +389,83 @@ while(tmp!=NULL)
 
 OUTPUT:
 15	25	35	40	45	
+
+Q)
+WRITE A PROGRAM DELETE A NODE BETWEEN LINKED LIST?
+A)
+#include<stdio.h>
+#include<stdlib.h>
+struct node
+{
+    int data;
+    struct node*link;
+};
+struct node*deltonode(struct node **head,int data);
+struct node*printlist(struct node*head);
+int main()
+{
+    struct node*head=NULL;
+    head=malloc(sizeof(struct node));
+    head->data=15;
+    head->link=NULL;
+    struct node*current;
+    current=malloc(sizeof(struct node));
+    current->data=25;
+    current->link=NULL;
+    head->link=current;
+    current=malloc(sizeof(struct node));
+    current->data=35;
+    current->link=NULL;
+    head->link->link=current;
+    current=malloc(sizeof(struct node));
+    current->data=45;
+    current->link=NULL;
+    head->link->link->link=current;
+    int d=25;
+    deltonode(&head,d);
+    printlist(head);
+    return 0;
+}
+struct node*deltonode(struct node **head,int data)
+{
+struct node *prev,*p;
+p=*head;
+prev=NULL;
+if (*head==NULL)
+{
+    printf("list is empty");
+    return 0;
+}
+//deleting 1st node
+if(p->data==data)
+{
+    *head=p->link;
+    free(p);
+    p=NULL;
+}
+//deleting other nodes
+while(p!=NULL && p->data != data)
+{
+    prev=p;
+    p=p->link;
+}
+if (p == NULL) {
+        printf("Node with data %d not found\n", data);
+        return 0;
+    }
+prev->link=p->link;
+free(p);
+p=NULL;
+}
+struct node*printlist(struct node*head)
+{
+struct node*tmp;
+tmp=head;
+while(tmp!=NULL)
+{
+    printf("%d\t",tmp->data);
+    tmp=tmp->link;
+}
+}
+OUTPUT:
+15	35	45	
