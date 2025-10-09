@@ -327,6 +327,8 @@ OUTPUT:
 
 
 
+Q)WRITE A PROGRAM INSERT A NODE BETWEEN LINKED LIST?
+A)
 #include<stdio.h>
 #include<stdlib.h>
 struct node
@@ -334,7 +336,7 @@ struct node
     int data;
     struct node*link;
 };
-struct node*insertnode(int data);
+struct node*insertnode(struct node*head,int data);
 int main()
 {
     struct node*head;
@@ -346,20 +348,20 @@ int main()
     current->data=25;
     current->link=NULL;
     head->link=current;
-   // current=malloc(sizeof(struct node));
-    //current->data=35;
-    //current->link=NULL;
-    //head->link->link=current;
-    //current=malloc(sizeof(struct node));
-    //current->data=45;
-    //current->link=NULL;
-    //head->link->link->link=current;
+    current=malloc(sizeof(struct node));
+    current->data=35;
+    current->link=NULL;
+    head->link->link=current;
+    current=malloc(sizeof(struct node));
+    current->data=45;
+    current->link=NULL;
+    head->link->link->link=current;
     int d=40;;
-    insertnode(d);
+    insertnode(head,d);
 }
-struct node* insertnode(int data)
+struct node*insertnode(struct node*head,int data)
 {
-    struct node *head,*new,*p,*prev;
+    struct node*new,*p,*prev;
     new=malloc(sizeof(struct node));
     new->data=data;
     new->link=NULL;
@@ -384,5 +386,6 @@ while(tmp!=NULL)
     tmp=tmp->link;
 }
 }
-    
 
+OUTPUT:
+15	25	35	40	45	
