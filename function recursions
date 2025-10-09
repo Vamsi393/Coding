@@ -22,3 +22,30 @@ int factorial(int num)
 OUTPUT:
 enter the number:5
 120
+
+Q)Q)WRITE A PROGRAM FIBANOCI SERIES OF THE NUMBER USING FUNCTION RECURSION?
+A)
+#include<stdio.h>
+int fib(int num)
+{
+    if(num==0)
+    return 0;
+    if (num==1)
+    return 1;
+    int fibanoci=fib(num-1)+fib(num-2);
+    return fibanoci;
+}
+int main()
+{
+    int n;
+    printf("enter the fibbanoci number:");
+    scanf("%d",&n);
+    int i;
+    for(i=0;i<=n;i++)
+    {
+    printf("%d\t",fib(i));
+    }
+}
+OUTPUT:
+enter the fibbanoci number:9
+0	1	1	2	3	5	8	13	21	34	
