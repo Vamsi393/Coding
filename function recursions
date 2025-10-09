@@ -1,1 +1,24 @@
-
+Q)WRITE A PROGRAM FACTORIAL OF THE NUMBER USING FUNCTION RECURSION?
+A)include<stdio.h>
+int factorial(int num);
+int main()
+{
+    int n;
+    printf("enter the number:");
+    scanf("%d",&n);
+    int res=factorial(n);
+    printf("%d",res);
+}
+int factorial(int num)
+ { 
+     int fact;
+     if (num==1)
+     {
+         return 1;
+     }
+     fact=num*factorial(num-1);
+     return fact;
+ }
+OUTPUT:
+enter the number:5
+120
