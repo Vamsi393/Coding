@@ -427,15 +427,19 @@ int main()
     return 0;
 }
 struct node*deltonode(struct node **head,int data)
+//why double pointer is used?
+//ANS:head is changed if 1st node is deleted
 {
 struct node *prev,*p;
-p=*head;
-prev=NULL;
+//p=*head;
+//prev=NULL;
 if (*head==NULL)
 {
     printf("list is empty");
     return 0;
 }
+p=*head;
+prev=NULL;
 //deleting 1st node
 if(p->data==data)
 {
@@ -467,5 +471,6 @@ while(tmp!=NULL)
     tmp=tmp->link;
 }
 }
+
 OUTPUT:
-15	35	45	
+15	35	45
