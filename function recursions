@@ -72,3 +72,29 @@ int main()
 OUTPUT:
 enter the number:12345
 15
+
+Q)WRITE A PROGRAM Print numbers from 1 to N using recursion?
+A)
+#include<stdio.h>
+void printsumofnum(int n);
+int main()
+{
+    int num;
+    printf("enter the number:");
+    scanf("%d",&num);
+   printsumofnum(num);
+   // printf("%d",num);
+}
+void printsumofnum(int n)
+{
+    if(n==0)
+    {
+        return;
+    }
+    // printf("%d",n);
+    printsumofnum(n-1);
+    printf("%d\t",n);
+}
+OUTPUT:
+enter the number:6
+1	2	3	4	5	6
