@@ -98,3 +98,40 @@ void printsumofnum(int n)
 OUTPUT:
 enter the number:6
 1	2	3	4	5	6
+
+Q)Reverse a string using recursion?
+A)#include<stdio.h>
+//#include<string.h>
+//void reverse(char s[],int i);
+//int mian()
+//{
+    //char str[10];
+    //printf("enter the string:");
+    //gets(str);
+    //fgets(str,sizeof(str),stdin);
+    //reverse(str,0);
+    //return 0;
+//}
+void reverse(char s[],int i)
+{
+    if(s[i]=='\0')
+    {
+        return;
+    }
+    reverse(s,i+1);//funvtion call
+    printf("%c",s[i]);
+}
+int main()
+{
+    char str[15];
+    printf("enter the string:");
+   // gets(str);
+    fgets(str,sizeof(str),stdin);
+    //for(int i=0;str[i]!='\0';i++)
+    reverse(str,0);
+    return 0;
+}
+OUTPUT:
+enter the string:vamsi  krishna
+anhsirk  ismav
+
