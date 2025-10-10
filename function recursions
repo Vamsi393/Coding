@@ -49,3 +49,26 @@ int main()
 OUTPUT:
 enter the fibbanoci number:9
 0	1	1	2	3	5	8	13	21	34	
+
+Q)WRITE A PROGRAM sum OF THE NUMBER USING FUNCTION RECURSION?
+A)#include<stdio.h>
+int sumofdigits(int num);
+int main()
+{
+    int n,res;
+    printf("enter the number:");
+    scanf("%d",&n);
+    printf("%d\n",sumofdigits(n));
+}
+ int sumofdigits(int num)
+ {
+     if(num==0)
+     {
+         return 0;
+     }
+     int sum=num%10+sumofdigits(num/10);
+     return sum;
+ }
+OUTPUT:
+enter the number:12345
+15
