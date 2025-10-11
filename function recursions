@@ -135,3 +135,38 @@ OUTPUT:
 enter the string:vamsi  krishna
 anhsirk  ismav
 
+Q)WRITE A PROGRAM STRING IS A PALINDROME OR NOT USING RECURSION?
+A)#include<stdio.h>
+#include<string.h>
+#include<stdbool.h>
+bool ispalindrome(const char *str,int i,int j);
+int main()
+{
+    char str[100];
+    printf("enter the string:");
+    scanf("%[^\n]",str);
+    if (ispalindrome(str,0,strlen(str)-1))
+    {
+        printf("%s is palindrome",str);
+    }
+    else
+    {
+        printf("%s not palindrome",str);
+    }
+    return 0;
+}
+ bool ispalindrome(const char *str,int i,int j)
+{
+    if(i>=j)
+    return true;
+    if(str[i]!=str[j])
+    return false;
+    int res=ispalindrome(str,i+1,j-1);//recursive fun
+    return res;
+}
+OUTPUT:
+enter the string:bab
+bab is palindrome
+enter the string:vamsi
+vamsi not palindrome
+
