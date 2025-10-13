@@ -537,6 +537,51 @@ enter the number c:47
 largest of three numbers is 47
 
 
+Q)WRITE A PROGRAM MINI CALCULATOR USING SWITCH CASE?
+A)#include<stdio.h>
+int main()
+{
+    int a,b;
+    char op;
+    printf("enter the value of a:");
+    scanf("%d",&a);
+    printf("enter the value of b:");
+    scanf("%d",&b);
+    printf ("enter the operator op:");
+    scanf(" %c",&op);
+    switch(op)
+    {
+        case '+':
+        printf("%d",a+b);
+        break;
+        case '-':
+        printf("%d",a-b);
+        break;
+        case '*':
+        printf("%d",a*b);
+        break;
+        case '/':
+        printf("%d",a/b);
+        break;
+        case '%':
+        printf("%d",a%b);
+        break;
+        default :
+        printf("invalid operator");
+        
+    }
+}
+OUTPUT:
+enter the value of a:56
+enter the value of b:67
+enter the operator op:+
+123
+enter the value of a:34
+enter the value of b:6
+enter the operator op:*
+204
+
+
 
 
 
