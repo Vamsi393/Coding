@@ -374,6 +374,76 @@ decimal number=1
 enter the hexa decimal number:1011
 decimal number=4113
 
+Q)WRITE A PROGRAM FIND THE LARGEST OF TWO NUMBERS?
+A)
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("emter the number a:");
+    scanf("%d",&a);
+    printf("enter the number b:");
+    scanf("%d",&b);
+    //printf("enter the number c:");
+    //scanf("%d",&c);
+  if(a>b)
+   {
+       printf(" larger number is a");
+  }
+   else
+   {
+       printf(" larger number is b");
+   }
+  // else if (c>a)
+   //{
+       //printf("c is larger");
+   //}
+  // else
+   //printf("three numbers are equal");
+  // int res=(a>b)?((a>c)?a:c):((b>c)?b:c);
+   //printf("largest of three numbers is %d",res);
+  //int res=(a>b)?printf("a is larger"):printf("b is larger");
+}
+OUTPUT:
+emter the number a:45
+enter the number b:99
+ larger number is b
+USING TERNARY OPERATOR?
+A)
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("emter the number a:");
+    scanf("%d",&a);
+    printf("enter the number b:");
+    scanf("%d",&b);
+    //printf("enter the number c:");
+    //scanf("%d",&c);
+  //if(a>b)
+   //{
+      // printf(" larger number is a");
+  //}
+   //else
+   //{
+       //printf(" larger number is b");
+   //}
+  // else if (c>a)
+   //{
+       //printf("c is larger");
+   //}
+  // else
+   //printf("three numbers are equal");
+  // int res=(a>b)?((a>c)?a:c):((b>c)?b:c);
+   //printf("largest of three numbers is %d",res);
+  int res=(a>b)?printf("a is larger"):printf("b is larger");
+}
+OUTPUT:
+emter the number a:89
+enter the number b:12
+a is larger
+
+
 
 
 
