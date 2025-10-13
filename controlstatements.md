@@ -444,6 +444,99 @@ enter the number b:12
 a is larger
 
 
+Q)WRITE A PROGRAM FIND THE LARGEST OF THREE NUMBERS?
+A)#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("emter the number a:");
+    scanf("%d",&a);
+    printf("enter the number b:");
+    scanf("%d",&b);
+    printf("enter the number c:");
+    scanf("%d",&c);
+  if(a>b)
+  if (a>c)
+   {
+      printf(" larger number is a");
+  }
+   else
+   {
+       printf(" larger number is c");
+   }
+   else
+   if(b>c)
+   {
+       printf("b is larger");
+   }
+   else
+   {
+       printf("c is larger");
+   }
+ // else
+   //printf("three numbers are equal");
+  // int res=(a>b)?((a>c)?a:c):((b>c)?b:c);
+   //printf("largest of three numbers is %d",res);
+  //int res=(a>b)?printf("a is larger"):printf("b is larger");
+}
+OUTPUT:
+emter the number a:34
+enter the number b:45
+enter the number c:67
+c is larger
+OR
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("emter the number a:");
+    scanf("%d",&a);
+    printf("enter the number b:");
+    scanf("%d",&b);
+    printf("enter the number c:");
+    scanf("%d",&c);
+  if(a>b && a>c)
+  printf("a is larger");
+  else if (b>c)
+  printf("b is larger");
+  else 
+  printf("c is larger");
+ // else
+   //printf("three numbers are equal");
+  // int res=(a>b)?((a>c)?a:c):((b>c)?b:c);
+   //printf("largest of three numbers is %d",res);
+  //int res=(a>b)?printf("a is larger"):printf("b is larger");
+}
+USING TERNARY OPERATOR?
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("emter the number a:");
+    scanf("%d",&a);
+    printf("enter the number b:");
+    scanf("%d",&b);
+    printf("enter the number c:");
+    scanf("%d",&c);
+ // if(a>b && a>c)
+  //printf("a is larger");
+ // else if (b>c)
+  //printf("b is larger");
+  //else 
+  //printf("c is larger");
+ // else
+   //printf("three numbers are equal");
+   int res=(a>b)?((a>c)?a:c):((b>c)?b:c);
+   printf("largest of three numbers is %d",res);
+  //int res=(a>b)?printf("a is larger"):printf("b is larger");
+}
+OUTPUT:
+emter the number a:34
+enter the number b:45
+enter the number c:47
+largest of three numbers is 47
+
+
 
 
 
