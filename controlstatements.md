@@ -655,6 +655,19 @@ enter the amount:12000
 enter the chice u be want:100
  120
 
+Q)WRITE A PROGRAM TO PRINT THE ASCII VALUES?
+A)
+#include<stdio.h>
+int main()
+{
+    int i=0;
+    for( ;i<=128;i++)
+    {
+        printf("%c %d\n",i,i);
+    }
+}
+
+
 
 
 
