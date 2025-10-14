@@ -581,6 +581,80 @@ enter the value of b:6
 enter the operator op:*
 204
 
+Q)WRITE A PROGRAM ATM MACHINE USING SWITCH CASE?
+A)#include<stdio.h>
+int main()
+{
+    int n,notes,choice;
+    printf("enter the amount:");
+    scanf("%d",&n);
+    printf("enter the chice u be want:");
+    scanf("%d",&choice);
+    switch(choice)
+    {
+        case 100:
+        notes=n/100;
+        printf(" %d",notes);
+        n=n%100;
+        break;
+        
+        case 50:
+        notes=n/50;
+        printf(" %d",notes);
+        n=n%50;
+        break;
+        
+        case 1000:
+        notes=n/1000;
+        printf(" %d",notes);
+        n=n%1000;
+        break;
+        
+        case 500:
+        notes=n/500;
+        printf(" %d",notes);
+        n=n%500;
+        break;
+        
+        case 200:
+        notes=n/200;
+        printf(" %d",notes);
+        n=n/200;
+        break;
+        
+        case 10:
+        notes=n/10;
+        printf(" %d",notes);
+        n=n/10;
+        break;
+        
+        case 5:
+        notes=n/5;
+        printf(" %d",notes);
+        n=n/5;
+        break;
+        
+        case 2:
+        notes=n/2;
+        printf(" %d",notes);
+        n=n/2;
+        break;
+        
+        case 1:
+        notes=n/1;
+        printf(" %d",notes);
+        n=n/1;
+        break;
+        
+        default:
+        printf("invalid money");
+}
+}
+OUTPUT:
+enter the amount:12000
+enter the chice u be want:100
+ 120
+
 
 
 
