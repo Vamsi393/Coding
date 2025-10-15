@@ -84,4 +84,33 @@ OUTPUT:enter the number:10
 number is not prime
 enter the number:2
 number is prime
-    
+
+Q)WRITE A PROGRAM CONVERT DECIMAL TO BINARY USING FUNCTION?
+A)#include<stdio.h>
+int decbin(int n);
+int main()
+{
+    int binary[32],i,j,num;
+    printf("enter the number:");
+    scanf("%d",&num);
+    int res=decbin(num);
+    printf("%d",res);
+}
+int decbin(int n)
+{
+    int binary=0,base=1;
+    while(n>0)
+    {
+         int rem=n%2;
+         binary=binary+rem*base;
+        n=n/2;
+        base=base*10;
+    }
+    return binary;
+}
+OUTPUT:
+enter the number:10
+1010
+    enter the number:5
+101
+
