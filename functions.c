@@ -44,5 +44,44 @@ char astrcpy(char *destination,char *source)
     }
     return *p;
 }
-OUTPUT:vamsi
+OUTPUT:vamsi  
+
+Q)WRITE A PROGRAM FOR NUMBER IS PRIME OR NOT USING FUNCTIONS?
+A)#include<stdio.h>
+int prime(int n);
+int main()
+{
+    int num;
+    printf("enter the number:");
+    scanf("%d",&num);
+    if (prime(num))
+        printf("number is prime");
+    else
+    printf("number is not prime");
+}
+int prime(int n)
+{
+    int i;
+    for(i=2;i<n;i++)
+    {
+    if(n%i==0)
+    {
+        //printf("not prime number");
+        return 0;
+       // flag=0;
+        break;
+    }
+    //if(flag==1)
+    else
+    {
+       // printf("prime number");
+        return 1;
+    }
+    }
+
+}
+OUTPUT:enter the number:10
+number is not prime
+enter the number:2
+number is prime
     
