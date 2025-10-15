@@ -141,3 +141,31 @@ OUTPUT:
 enter the decimal number:10
 12
 
+Q)Q)WRITE A PROGRAM CONVERT DECIMAL TO HEXADECIMAL USING FUNCTION?
+A)#include<stdio.h>
+int dechex(int n);
+int main()
+{
+    int num;
+    printf("enter the number:");
+    scanf("%d",&num);
+    int res=dechex(num);
+    printf("%x",res);
+}
+int dechex(int n)
+{
+    int hexa=0,base=1;
+    while(n>0)
+    {
+        int rem=n%16;
+        hexa=hexa+rem*base;
+        n=n/16;
+        base=base*10;
+    }
+    return hexa;
+    
+}
+OUTPUT:
+enter the number:1010
+1c4
+
