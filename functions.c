@@ -114,3 +114,30 @@ enter the number:10
     enter the number:5
 101
 
+Q)WRITE A PROGRAM CONVERT DECIMAL TO octal USING FUNCTION?
+A)#include<stdio.h>
+int decoct(int n);
+int main()
+{
+    int num;
+    printf("enter the decimal number:");
+    scanf("%d",&num);
+    int res=decoct(num);
+    printf("%d",res);
+}
+int decoct(int n)
+{
+    int octal=0,base=1;
+    while(n>0)
+    {
+        int rem=n%8;
+        octal=octal+rem*base;
+        n=n/10;
+        base=base*10;
+    }
+    return octal;
+}
+OUTPUT:
+enter the decimal number:10
+12
+
