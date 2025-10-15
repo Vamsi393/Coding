@@ -253,5 +253,59 @@ OUTPUT:
 enter the number:0x1
 1
 
+Q)WRITE A PROGRAM CONVERT DECIMAL TO ROMAN NUMBER USING FUNCTION?
+A)#include<stdio.h>
+int roman(int n,int k,char ch);
+int main()
+{
+    int num;
+    printf("enter the number:");
+    scanf("%d",&num);
+    if(num>=1000)//fun inv
+    {
+    num=roman(num,1000,'M');
+    }
+    if(num>=500)//fun inv
+    {
+        num=roman(num,500,'D');
+    }
+    if(num>=100)//fun inv
+    {
+        num=roman(num,100,'C');
+    }
+    if(num>=50)//fun inv
+    {
+        num=roman(num,50,'L');
+    }
+    if(num>=10)//fun inv
+    {
+        num=roman(num,10,'X');
+    }
+    if(num>=5)//fun inv
+    {
+        num=roman(num,5,'v');
+    }
+    if(num>=1)
+    {
+        num=roman(num,1,'I');
+    }
+}
+    int roman(int n,int k,char ch)
+    {
+        while(n>=k)
+        {
+            printf("%c",ch);
+            n=n-k;
+        }
+        return n;
+    }
+OUTPUT:
+enter the number:51
+LI
+    enter the number:1010
+MX
+    enter the number:878
+DCCCLXXvIII
+
 
 
