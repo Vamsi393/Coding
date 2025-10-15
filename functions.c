@@ -225,5 +225,33 @@ OUTPUT:
 enter the number:131
 89
 
+Q)WRITE A PROGRAM CONVERT HEXADECIMAL TO DECIMAL USING FUNCTION?
+A)#include<stdio.h>
+int hexdec(int n);
+int main()
+{
+    int num;
+    printf("enter the number:");
+    scanf("%x",&num);
+    int res=hexdec(num);
+    printf("%d",res);
+}
+int hexdec(int n)
+{
+    int decimal=0,base=1;
+    while(n>0)
+    {
+        int rem=n%10;
+        decimal=decimal+rem*base;
+        n=n/10;
+        base=base*16;
+    }
+    return decimal;
+    
+}
+OUTPUT:
+enter the number:0x1
+1
+
 
 
