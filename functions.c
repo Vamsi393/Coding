@@ -197,4 +197,33 @@ OUTPUT:
 enter the number:1010
 10
 
+Q)WRITE A PROGRAM CONVERT OCTAL TO DECIMAL USING FUNCTION?
+A)#include<stdio.h>
+int octdec(int n);
+int main()
+{
+    int num;
+    printf("enter the number:");
+    scanf("%d",&num);
+    int res=octdec(num);
+    printf("%d",res);
+}
+int octdec(int n)
+{
+    int decimal=0,base=1;
+    while(n>0)
+    {
+        int rem=n%10;
+        decimal=decimal+rem*base;
+        n=n/10;
+        base=base*8;
+    }
+    return decimal;
+    
+}
+OUTPUT:
+enter the number:131
+89
+
+
 
