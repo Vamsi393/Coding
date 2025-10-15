@@ -169,3 +169,32 @@ OUTPUT:
 enter the number:1010
 1c4
 
+Q)WRITE A PROGRAM CONVERT BINARY TO DECIMAL USING FUNCTION?
+A)#include<stdio.h>
+int bindec(int n);
+int main()
+{
+    int num;
+    printf("enter the number:");
+    scanf("%d",&num);
+    int res=bindec(num);
+    printf("%d",res);
+}
+int bindec(int n)
+{
+    int decimal=0,base=1;
+    while(n>0)
+    {
+        int rem=n%10;
+        decimal=decimal+rem*base;
+        n=n/10;
+        base=base*2;
+    }
+    return decimal;
+    
+}
+OUTPUT:
+enter the number:1010
+10
+
+
